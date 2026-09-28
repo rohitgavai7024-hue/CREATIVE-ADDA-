@@ -1,0 +1,2803 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CREATIVE ADDA | Premium Gifts</title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --bg:#faf7f2;
+    --card:#ffffff;
+    --text:#171717;
+    --muted:#777;
+    --gold:#b28a35;
+    --black:#111111;
+    --border:#e5dfd5;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:#111;
+    color:white;
+
+    padding:16px 6%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.header-buttons{
+    display:flex;
+    gap:8px;
+}
+
+.header-btn{
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#242424;
+    color:white;
+
+    cursor:pointer;
+
+    position:relative;
+}
+
+.badge{
+    position:absolute;
+
+    top:-4px;
+    right:-4px;
+
+    width:19px;
+    height:19px;
+
+    background:#d4af37;
+    color:#111;
+
+    border-radius:50%;
+
+    font-size:11px;
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:85vh;
+
+    padding:70px 7%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff8ed,
+        #f0e0c8
+    );
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero-small{
+    color:#a27d2c;
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.05;
+
+    margin:20px 0;
+}
+
+.hero h1 span{
+    color:#b28a35;
+}
+
+.hero p{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    max-width:580px;
+}
+
+.hero-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b28a35;
+    transform:translateY(-3px);
+}
+
+.btn-gold{
+    background:#b28a35;
+    color:#111;
+}
+
+.hero-box{
+
+    width:380px;
+
+    height:430px;
+
+    background:#111;
+
+    color:white;
+
+    border-radius:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.25);
+}
+
+.hero-box h2{
+
+    font-size:40px;
+
+    letter-spacing:5px;
+}
+
+.hero-box p{
+
+    color:#d4af37;
+
+    margin-top:15px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:75px 7%;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.section-title small{
+
+    color:#b28a35;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    margin-top:10px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.category{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.category:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.1);
+}
+
+.category-icon{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+}
+
+.category p{
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-top:7px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.shop-tools{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+    flex-wrap:wrap;
+}
+
+.search{
+
+    width:350px;
+
+    padding:14px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    outline:none;
+
+    font-size:15px;
+}
+
+.filter{
+
+    padding:14px 20px;
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    background:white;
+
+    outline:none;
+
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:25px;
+}
+
+.product{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    position:relative;
+}
+
+.product:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.12);
+}
+
+.product-image{
+
+    height:250px;
+
+    background:#eee;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.product-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s;
+}
+
+.product:hover
+.product-image img{
+
+    transform:scale(1.06);
+}
+
+.wishlist{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.wishlist.active{
+    color:red;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    margin-bottom:8px;
+}
+
+.product-info p{
+
+    color:#777;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    min-height:43px;
+}
+
+.rating{
+
+    color:#d4af37;
+
+    margin:8px 0;
+}
+
+.price-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:15px 0;
+}
+
+.price{
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    color:#a27d2c;
+}
+
+.old-price{
+
+    font-size:13px;
+
+    color:#999;
+
+    text-decoration:line-through;
+
+    margin-left:5px;
+}
+
+.product-buttons{
+
+    display:flex;
+
+    gap:8px;
+}
+
+.add-cart{
+
+    flex:1;
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+.view-btn{
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    padding:12px 15px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+}
+
+.about-content{
+
+    max-width:750px;
+
+    margin:auto;
+}
+
+.about p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+    margin-top:20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#080808;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+footer p{
+
+    color:#999;
+
+    margin-top:10px;
+}
+
+.social{
+
+    margin-top:20px;
+}
+
+.social a{
+
+    color:#d4af37;
+
+    text-decoration:none;
+
+    margin:0 10px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.overlay{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    z-index:2000;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+}
+
+.overlay.show{
+    display:flex;
+}
+
+.modal{
+
+    background:white;
+
+    width:100%;
+
+    max-width:550px;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    position:relative;
+}
+
+.close{
+
+    position:absolute;
+
+    top:12px;
+
+    right:18px;
+
+    border:none;
+
+    background:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.cart-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+.cart-image{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:10px;
+
+    object-fit:cover;
+}
+
+.cart-info{
+    flex:1;
+}
+
+.cart-info h4{
+    margin-bottom:5px;
+}
+
+.qty{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    margin-top:8px;
+}
+
+.qty button{
+
+    width:28px;
+
+    height:28px;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+.remove{
+
+    border:none;
+
+    background:none;
+
+    color:red;
+
+    cursor:pointer;
+}
+
+.cart-total{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    margin:20px 0;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group{
+
+    margin-bottom:15px;
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:7px;
+}
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+}
+
+.form-group textarea{
+
+    min-height:90px;
+
+    resize:vertical;
+}
+
+.full-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   PRODUCT DETAILS
+========================= */
+
+.detail-image{
+
+    width:100%;
+
+    max-height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+.toast{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    background:#111;
+
+    color:white;
+
+    padding:15px 22px;
+
+    border-radius:10px;
+
+    opacity:0;
+
+    transform:translateY(100px);
+
+    transition:.3s;
+
+    z-index:5000;
+}
+
+.toast.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:1100px){
+
+    .products{
+
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+
+    .categories{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+@media(max-width:800px){
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .hero-box{
+
+        width:100%;
+
+        max-width:380px;
+    }
+
+    .products{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+@media(max-width:550px){
+
+    header{
+
+        padding:14px 4%;
+    }
+
+    .logo{
+
+        font-size:18px;
+    }
+
+    .hero{
+
+        padding:60px 5%;
+    }
+
+    .hero h1{
+
+        font-size:38px;
+    }
+
+    section{
+
+        padding:60px 5%;
+    }
+
+    .products,
+    .categories{
+
+        grid-template-columns:1fr;
+    }
+
+    .search{
+
+        width:100%;
+    }
+
+    .section-title h2{
+
+        font-size:32px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="logo">
+CREATIVE ADDA
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#categories">
+Categories
+</a>
+
+<a href="#shop">
+Shop
+</a>
+
+<a href="#about">
+About
+</a>
+
+</nav>
+
+
+<div class="header-buttons">
+
+<button
+class="header-btn"
+onclick="openLogin()">
+
+👤
+
+</button>
+
+
+<button
+class="header-btn"
+onclick="openWishlist()">
+
+❤️
+
+<span
+class="badge"
+id="wishCount">
+
+0
+
+</span>
+
+</button>
+
+
+<button
+class="header-btn"
+onclick="openCart()">
+
+🛒
+
+<span
+class="badge"
+id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+class="hero"
+id="home">
+
+<div class="hero-content">
+
+<div class="hero-small">
+
+PREMIUM GIFT STORE
+
+</div>
+
+<h1>
+
+Make Every
+
+<span>
+Moment
+</span>
+
+Special.
+
+</h1>
+
+<p>
+
+Discover personalized gifts,
+customized mugs, beautiful photo
+frames, lamps and memorable gifts
+for the people you love.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#shop"
+class="btn">
+
+Shop Now
+
+</a>
+
+
+<button
+class="btn btn-gold"
+onclick="openLogin()">
+
+Create Account
+
+</button>
+
+</div>
+
+</div>
+
+
+<div class="hero-box">
+
+<div>
+
+<h2>
+
+CREATIVE<br>
+
+ADDA
+
+</h2>
+
+<p>
+
+Gifts • Memories • Emotions
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section
+id="categories">
+
+<div class="section-title">
+
+<small>
+EXPLORE
+</small>
+
+<h2>
+Shop By Category
+</h2>
+
+</div>
+
+
+<div class="categories">
+
+
+<div
+class="category"
+onclick="filterCategory('Frame')">
+
+<div class="category-icon">
+🖼️
+</div>
+
+<h3>
+Photo Frames
+</h3>
+
+<p>
+Personalized memories
+</p>
+
+</div>
+
+
+<div
+class="category"
+onclick="filterCategory('Mug')">
+
+<div class="category-icon">
+☕
+</div>
+
+<h3>
+Customized Mugs
+</h3>
+
+<p>
+Personalized mugs
+</p>
+
+</div>
+
+
+<div
+class="category"
+onclick="filterCategory('Lamp')">
+
+<div class="category-icon">
+💡
+</div>
+
+<h3>
+Decorative Lamps
+</h3>
+
+<p>
+Beautiful lighting
+</p>
+
+</div>
+
+
+<div
+class="category"
+onclick="filterCategory('Gift')">
+
+<div class="category-icon">
+🎁
+</div>
+
+<h3>
+Gift Boxes
+</h3>
+
+<p>
+Special surprises
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SHOP
+========================= -->
+
+<section
+id="shop">
+
+<div class="section-title">
+
+<small>
+CREATIVE ADDA COLLECTION
+</small>
+
+<h2>
+Our Products
+</h2>
+
+</div>
+
+
+<div class="shop-tools">
+
+<input
+class="search"
+id="search"
+placeholder="🔎 Search products..."
+oninput="renderProducts()">
+
+
+<select
+class="filter"
+id="filter"
+onchange="renderProducts()">
+
+<option value="All">
+All Products
+</option>
+
+<option value="Frame">
+Photo Frames
+</option>
+
+<option value="Mug">
+Mugs
+</option>
+
+<option value="Lamp">
+Lamps
+</option>
+
+<option value="Gift">
+Gift Boxes
+</option>
+
+</select>
+
+</div>
+
+
+<div
+class="products"
+id="products">
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section
+class="about"
+id="about">
+
+<div
+class="about-content">
+
+<h2>
+Why CREATIVE ADDA?
+</h2>
+
+<p>
+
+We create gifts that turn ordinary
+moments into unforgettable memories.
+From personalized photo frames to
+customized mugs and beautiful lamps,
+CREATIVE ADDA is made for special
+people and special occasions.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<h3>
+CREATIVE ADDA
+</h3>
+
+<p>
+Premium Gifts • Personalized Memories • Special Moments
+</p>
+
+<div class="social">
+
+<a href="#">
+Instagram
+</a>
+
+<a href="#">
+WhatsApp
+</a>
+
+</div>
+
+<p>
+© 2026 CREATIVE ADDA. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- =========================
+     CART MODAL
+========================= -->
+
+<div
+class="overlay"
+id="cartModal">
+
+<div class="modal">
+
+<button
+class="close"
+onclick="closeModal('cartModal')">
+
+×
+
+</button>
+
+<h2>
+🛒 Your Cart
+</h2>
+
+<div
+id="cartItems">
+
+</div>
+
+<div
+class="cart-total">
+
+<span>
+Total
+</span>
+
+<span
+id="cartTotal">
+
+₹0
+
+</span>
+
+</div>
+
+<button
+class="full-btn"
+onclick="openCheckout()">
+
+Proceed to Checkout
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     WISHLIST
+========================= -->
+
+<div
+class="overlay"
+id="wishModal">
+
+<div class="modal">
+
+<button
+class="close"
+onclick="closeModal('wishModal')">
+
+×
+
+</button>
+
+<h2>
+❤️ Wishlist
+</h2>
+
+<div
+id="wishItems">
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     DETAILS
+========================= -->
+
+<div
+class="overlay"
+id="detailsModal">
+
+<div class="modal">
+
+<button
+class="close"
+onclick="closeModal('detailsModal')">
+
+×
+
+</button>
+
+<div
+id="productDetails">
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     LOGIN
+========================= -->
+
+<div
+class="overlay"
+id="loginModal">
+
+<div class="modal">
+
+<button
+class="close"
+onclick="closeModal('loginModal')">
+
+×
+
+</button>
+
+<h2>
+👤 CREATIVE ADDA Account
+</h2>
+
+
+<div class="form-group">
+
+<label>
+Your Name
+</label>
+
+<input
+id="loginName"
+placeholder="Enter your name">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email
+</label>
+
+<input
+id="loginEmail"
+type="email"
+placeholder="Enter your email">
+
+</div>
+
+
+<button
+class="full-btn"
+onclick="loginUser()">
+
+Create Account
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     CHECKOUT
+========================= -->
+
+<div
+class="overlay"
+id="checkoutModal">
+
+<div class="modal">
+
+<button
+class="close"
+onclick="closeModal('checkoutModal')">
+
+×
+
+</button>
+
+<h2>
+📦 Order Details
+</h2>
+
+
+<div class="form-group">
+
+<label>
+Full Name
+</label>
+
+<input
+id="orderName"
+placeholder="Your full name">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Mobile Number
+</label>
+
+<input
+id="orderPhone"
+placeholder="10 digit mobile number">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Delivery Address
+</label>
+
+<textarea
+id="orderAddress"
+placeholder="Complete delivery address">
+
+</textarea>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Coupon Code
+</label>
+
+<input
+id="coupon"
+placeholder="Try CREATIVE10">
+
+</div>
+
+
+<button
+class="full-btn"
+onclick="placeOrder()">
+
+Order on WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div
+class="toast"
+id="toast">
+
+Added to cart!
+
+</div>
+
+
+<script>
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+const products = [
+
+{
+id:1,
+
+name:"Personalized Couple Photo Frame",
+
+category:"Frame",
+
+price:499,
+
+oldPrice:699,
+
+image:"WhatsApp Image 2026-09-28 at 6.39.05 PM.jpeg",
+
+rating:"★★★★★",
+
+description:
+"Beautiful personalized photo frame for birthdays, couples, anniversaries and special memories."
+},
+
+
+{
+id:2,
+
+name:"Personalized Birthday Photo Frame",
+
+category:"Frame",
+
+price:549,
+
+oldPrice:699,
+
+image:"WhatsApp Image 2026-09-27 at 9.18.08 PM.jpeg",
+
+rating:"★★★★★",
+
+description:
+"Create a special frame with your favorite photo, name or message."
+},
+
+
+{
+id:3,
+
+name:"Spotify Couple  Music Mug",
+
+category:"Mug",
+
+price:499,
+
+oldPrice:599,
+
+image:"download.jpg",
+
+rating:"★★★★☆",
+
+description:
+"Stylish music-inspired mug designed for music lovers."
+},
+
+
+{
+id:4,
+
+name:"LED Heart Lamp",
+
+category:"Lamp",
+
+price:699,
+
+oldPrice:999,
+
+image:"WhatsApp Image 2026-09-28 at 6.45.47 PM.jpeg",
+
+rating:"★★★★★",
+
+description:
+"Beautiful LED heart lamp for romantic and memorable occasions."
+},
+
+
+{
+id:5,
+
+name:"Solar Decorative Lamp",
+
+category:"Lamp",
+
+price:349,
+
+oldPrice:599,
+
+image:"WhatsApp Image 2026-09-28 at 6.47.45 PM.jpeg",
+
+rating:"★★★★☆",
+
+description:
+"Decorative lighting for your room, balcony or special occasion."
+},
+
+
+{
+id:6,
+
+name:"Premium Gift Box",
+
+category:"Gift",
+
+price:799,
+
+oldPrice:999,
+
+image:"images/gift-box.jpg",
+
+rating:"★★★★★",
+
+description:
+"Premium gift box designed for birthdays, anniversaries and celebrations."
+},
+
+
+{
+id:7,
+
+name:"Best Friend Frame",
+
+category:"Frame",
+
+price:549,
+
+oldPrice:749,
+
+image:"Untitled design (3).jpg",
+
+rating:"★★★★★",
+
+description:
+"Personalized frame made specially for your best friend."
+},
+
+
+{
+id:8,
+
+name:"Birthday Gift Set",
+
+category:"Gift",
+
+price:1499,
+
+oldPrice:1199,
+
+image:"WhatsApp Image 2026-09-28 at 6.54.08 PM.jpeg",
+
+rating:"★★★★★",
+
+description:
+"Complete birthday gift set for someone special."
+}
+
+];
+
+
+let cart =
+JSON.parse(
+localStorage.getItem("creativeCart")
+) || [];
+
+
+let wishlist =
+JSON.parse(
+localStorage.getItem("creativeWishlist")
+) || [];
+
+
+/* =========================
+   SHOW PRODUCTS
+========================= */
+
+function renderProducts(){
+
+const container =
+document.getElementById("products");
+
+const search =
+document
+.getElementById("search")
+.value
+.toLowerCase();
+
+const filter =
+document
+.getElementById("filter")
+.value;
+
+
+const list =
+products.filter(product=>{
+
+const searchMatch =
+product.name
+.toLowerCase()
+.includes(search);
+
+const categoryMatch =
+filter === "All" ||
+product.category === filter;
+
+return searchMatch &&
+categoryMatch;
+
+});
+
+
+container.innerHTML="";
+
+
+if(list.length===0){
+
+container.innerHTML=
+"<p>No products found.</p>";
+
+return;
+
+}
+
+
+list.forEach(product=>{
+
+const liked =
+wishlist.includes(product.id);
+
+
+container.innerHTML += `
+
+<div class="product">
+
+
+<div class="product-image">
+
+<img
+src="${product.image}"
+alt="${product.name}"
+onerror="this.src='https://placehold.co/600x500?text=Product+Photo'"
+>
+
+
+<button
+class="wishlist ${liked ? "active":""}"
+onclick="toggleWishlist(${product.id})">
+
+${liked ? "❤️":"♡"}
+
+</button>
+
+</div>
+
+
+<div class="product-info">
+
+
+<h3>
+${product.name}
+</h3>
+
+
+<div class="rating">
+${product.rating}
+</div>
+
+
+<p>
+${product.description}
+</p>
+
+
+<div class="price-row">
+
+<div>
+
+<span class="price">
+₹${product.price}
+</span>
+
+<span class="old-price">
+₹${product.oldPrice}
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product-buttons">
+
+
+<button
+class="add-cart"
+onclick="addToCart(${product.id})">
+
+🛒 Add to Cart
+
+</button>
+
+
+<button
+class="view-btn"
+onclick="showDetails(${product.id})">
+
+View
+
+</button>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+`;
+
+});
+
+}
+
+
+/* =========================
+   CART
+========================= */
+
+function addToCart(id){
+
+const item =
+cart.find(item=>item.id===id);
+
+
+if(item){
+
+item.qty++;
+
+}else{
+
+cart.push({
+
+id:id,
+
+qty:1
+
+});
+
+}
+
+
+saveCart();
+
+showToast(
+"Product added to cart 🛒"
+);
+
+}
+
+
+function saveCart(){
+
+localStorage.setItem(
+"creativeCart",
+JSON.stringify(cart)
+);
+
+updateCartCount();
+
+}
+
+
+function updateCartCount(){
+
+let count=0;
+
+cart.forEach(item=>{
+count += item.qty;
+});
+
+document.getElementById("cartCount")
+.textContent=count;
+
+}
+
+
+function openCart(){
+
+renderCart();
+
+document
+.getElementById("cartModal")
+.classList.add("show");
+
+}
+
+
+function renderCart(){
+
+const container =
+document.getElementById("cartItems");
+
+
+if(cart.length===0){
+
+container.innerHTML=
+"<p>Your cart is empty.</p>";
+
+document.getElementById("cartTotal")
+.textContent="₹0";
+
+return;
+
+}
+
+
+let total=0;
+
+container.innerHTML="";
+
+
+cart.forEach(item=>{
+
+const product =
+products.find(
+p=>p.id===item.id
+);
+
+
+total +=
+product.price *
+item.qty;
+
+
+container.innerHTML += `
+
+<div class="cart-item">
+
+
+<img
+class="cart-image"
+src="${product.image}"
+alt="${product.name}"
+>
+
+
+<div class="cart-info">
+
+<h4>
+${product.name}
+</h4>
+
+<small>
+₹${product.price}
+</small>
+
+
+<div class="qty">
+
+<button
+onclick="changeQty(${product.id},-1)">
+−
+</button>
+
+<span>
+${item.qty}
+</span>
+
+<button
+onclick="changeQty(${product.id},1)">
++
+</button>
+
+</div>
+
+</div>
+
+
+<button
+class="remove"
+onclick="removeCart(${product.id})">
+
+Remove
+
+</button>
+
+
+</div>
+
+`;
+
+});
+
+
+document.getElementById("cartTotal")
+.textContent="₹"+total;
+
+}
+
+
+function changeQty(id,change){
+
+const item =
+cart.find(
+x=>x.id===id
+);
+
+
+if(!item)return;
+
+
+item.qty += change;
+
+
+if(item.qty<=0){
+
+cart =
+cart.filter(
+x=>x.id!==id
+);
+
+}
+
+
+saveCart();
+
+renderCart();
+
+}
+
+
+function removeCart(id){
+
+cart =
+cart.filter(
+item=>item.id!==id
+);
+
+saveCart();
+
+renderCart();
+
+}
+
+
+/* =========================
+   WISHLIST
+========================= */
+
+function toggleWishlist(id){
+
+if(wishlist.includes(id)){
+
+wishlist =
+wishlist.filter(
+x=>x!==id
+);
+
+showToast(
+"Removed from wishlist"
+);
+
+}else{
+
+wishlist.push(id);
+
+showToast(
+"Added to wishlist ❤️"
+);
+
+}
+
+
+localStorage.setItem(
+"creativeWishlist",
+JSON.stringify(wishlist)
+);
+
+
+document.getElementById("wishCount")
+.textContent =
+wishlist.length;
+
+
+renderProducts();
+
+}
+
+
+function openWishlist(){
+
+const container =
+document.getElementById("wishItems");
+
+
+if(wishlist.length===0){
+
+container.innerHTML=
+"<p>Your wishlist is empty.</p>";
+
+}else{
+
+container.innerHTML="";
+
+
+wishlist.forEach(id=>{
+
+const product =
+products.find(
+p=>p.id===id
+);
+
+
+container.innerHTML += `
+
+<div class="cart-item">
+
+
+<img
+class="cart-image"
+src="${product.image}"
+>
+
+
+<div class="cart-info">
+
+<h4>
+${product.name}
+</h4>
+
+<small>
+₹${product.price}
+</small>
+
+</div>
+
+
+<button
+class="add-cart"
+onclick="addToCart(${product.id})">
+
+Add
+
+</button>
+
+
+</div>
+
+`;
+
+});
+
+}
+
+
+document
+.getElementById("wishModal")
+.classList.add("show");
+
+}
+
+
+/* =========================
+   PRODUCT DETAILS
+========================= */
+
+function showDetails(id){
+
+const product =
+products.find(
+p=>p.id===id
+);
+
+
+document.getElementById(
+"productDetails"
+).innerHTML = `
+
+
+<img
+class="detail-image"
+src="${product.image}"
+alt="${product.name}"
+>
+
+
+<h2>
+${product.name}
+</h2>
+
+
+<div class="rating">
+
+${product.rating}
+
+</div>
+
+
+<p style="
+margin:15px 0;
+line-height:1.7;
+color:#777;
+">
+
+${product.description}
+
+</p>
+
+
+<h2 style="
+color:#a27d2c;
+margin-bottom:20px;
+">
+
+₹${product.price}
+
+</h2>
+
+
+<button
+class="full-btn"
+onclick="
+addToCart(${product.id});
+closeModal('detailsModal');
+">
+
+🛒 Add To Cart
+
+</button>
+
+`;
+
+
+document
+.getElementById("detailsModal")
+.classList.add("show");
+
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+function filterCategory(category){
+
+document
+.getElementById("filter")
+.value =
+category;
+
+
+document
+.getElementById("shop")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+
+renderProducts();
+
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+function openLogin(){
+
+document
+.getElementById("loginModal")
+.classList.add("show");
+
+}
+
+
+function loginUser(){
+
+const name =
+document
+.getElementById("loginName")
+.value
+.trim();
+
+
+const email =
+document
+.getElementById("loginEmail")
+.value
+.trim();
+
+
+if(!name || !email){
+
+showToast(
+"Please enter your details"
+);
+
+return;
+
+}
+
+
+localStorage.setItem(
+"creativeUser",
+JSON.stringify({
+name:name,
+email:email
+})
+);
+
+
+closeModal("loginModal");
+
+
+showToast(
+"Welcome "+name+" 🎉"
+);
+
+}
+
+
+/* =========================
+   CHECKOUT
+========================= */
+
+function openCheckout(){
+
+if(cart.length===0){
+
+showToast(
+"Your cart is empty"
+);
+
+return;
+
+}
+
+
+closeModal(
+"cartModal"
+);
+
+
+document
+.getElementById("checkoutModal")
+.classList.add("show");
+
+}
+
+
+function placeOrder(){
+
+const name =
+document
+.getElementById("orderName")
+.value
+.trim();
+
+
+const phone =
+document
+.getElementById("orderPhone")
+.value
+.trim();
+
+
+const address =
+document
+.getElementById("orderAddress")
+.value
+.trim();
+
+
+const coupon =
+document
+.getElementById("coupon")
+.value
+.trim();
+
+
+if(!name || !phone || !address){
+
+showToast(
+"Please complete your details"
+);
+
+return;
+
+}
+
+
+let total=0;
+
+
+let message =
+"Hello CREATIVE ADDA!%0A%0A";
+
+
+message +=
+"🛍️ NEW ORDER%0A%0A";
+
+
+cart.forEach(item=>{
+
+const product =
+products.find(
+p=>p.id===item.id
+);
+
+
+total +=
+product.price *
+item.qty;
+
+
+message +=
+encodeURIComponent(
+product.name
+)+
+" x "+
+item.qty+
+" = ₹"+
+(product.price*item.qty)+
+"%0A";
+
+});
+
+
+let discount=0;
+
+
+if(
+coupon.toUpperCase()
+===
+"CREATIVE10"
+){
+
+discount =
+Math.round(
+total*0.10
+);
+
+}
+
+
+const finalTotal =
+total-discount;
+
+
+message +=
+"%0ATotal: ₹"+
+total;
+
+
+message +=
+"%0ADiscount: ₹"+
+discount;
+
+
+message +=
+"%0AFinal Total: ₹"+
+finalTotal;
+
+
+message +=
+"%0A%0ACustomer: "+
+encodeURIComponent(name);
+
+
+message +=
+"%0APhone: "+
+encodeURIComponent(phone);
+
+
+message +=
+"%0AAddress: "+
+encodeURIComponent(address);
+
+
+/*
+
+IMPORTANT:
+
+CHANGE THIS NUMBER
+
+919999999999
+
+TO YOUR REAL
+WHATSAPP NUMBER.
+
+*/
+
+
+const whatsapp =
+"https://wa.me/916267746790?text="+
+message;
+
+
+window.open(
+whatsapp,
+"_blank"
+);
+
+
+cart=[];
+
+saveCart();
+
+
+closeModal(
+"checkoutModal"
+);
+
+
+showToast(
+"Order created 🎉"
+);
+
+}
+
+
+/* =========================
+   CLOSE MODAL
+========================= */
+
+function closeModal(id){
+
+document
+.getElementById(id)
+.classList.remove("show");
+
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+function showToast(message){
+
+const toast =
+document.getElementById("toast");
+
+
+toast.textContent =
+message;
+
+
+toast.classList.add("show");
+
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2200);
+
+}
+
+
+/* =========================
+   START WEBSITE
+========================= */
+
+renderProducts();
+
+updateCartCount();
+
+document
+.getElementById("wishCount")
+.textContent =
+wishlist.length;
+
+
+</script>
+
+</body>
+
+</html>
+```
