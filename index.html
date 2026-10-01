@@ -1,45 +1,42 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8b4417e (this is updated index.html file)
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CREATIVE ADDA | Premium Gifts</title>
+<title>CREATIVE ADDA | Personalized Gifts</title>
 
 <style>
 
 /* =========================
-   BASIC
+   RESET
 ========================= */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
-
-html{
     scroll-behavior:smooth;
 }
 
-:root{
-    --bg:#faf7f2;
-    --card:#ffffff;
-    --text:#171717;
-    --muted:#777;
-    --gold:#b28a35;
-    --black:#111111;
-    --border:#e5dfd5;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#faf8f4;
+    color:#222;
 }
 
-body{
-    background:var(--bg);
-    color:var(--text);
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    cursor:pointer;
 }
 
 
@@ -51,80 +48,59 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-
     background:#111;
     color:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
 
-    padding:16px 6%;
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    padding:15px 20px;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     gap:20px;
 }
 
 .logo{
-    font-size:24px;
+    font-size:23px;
     font-weight:bold;
-    letter-spacing:2px;
+    color:#d4af37;
+    white-space:nowrap;
 }
 
-nav{
-    display:flex;
-    gap:25px;
-}
-
-nav a{
+.logo span{
+    display:block;
     color:white;
-    text-decoration:none;
-    font-size:14px;
+    font-size:9px;
+    letter-spacing:2px;
+    margin-top:3px;
 }
 
-nav a:hover{
+.nav-links{
+    display:flex;
+    gap:18px;
+}
+
+.nav-links a{
+    color:white;
+    font-size:13px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
     color:#d4af37;
 }
 
-.header-buttons{
-    display:flex;
-    gap:8px;
-}
-
-.header-btn{
-    width:42px;
-    height:42px;
-
+.cart-button{
     border:none;
-    border-radius:50%;
-
-    background:#242424;
-    color:white;
-
-    cursor:pointer;
-
-    position:relative;
-}
-
-.badge{
-    position:absolute;
-
-    top:-4px;
-    right:-4px;
-
-    width:19px;
-    height:19px;
-
     background:#d4af37;
     color:#111;
-
-    border-radius:50%;
-
-    font-size:11px;
+    padding:10px 15px;
+    border-radius:25px;
     font-weight:bold;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
 }
 
 
@@ -134,178 +110,102 @@ nav a:hover{
 
 .hero{
 
-    min-height:85vh;
-
-    padding:70px 7%;
+    min-height:570px;
 
     display:flex;
     align-items:center;
-    justify-content:space-between;
-
-    gap:50px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #fff8ed,
-        #f0e0c8
-    );
-}
-
-.hero-content{
-    max-width:650px;
-}
-
-.hero-small{
-    color:#a27d2c;
-
-    font-weight:bold;
-
-    letter-spacing:4px;
-
-    font-size:13px;
-}
-
-.hero h1{
-
-    font-size:64px;
-
-    line-height:1.05;
-
-    margin:20px 0;
-}
-
-.hero h1 span{
-    color:#b28a35;
-}
-
-.hero p{
-
-    color:#666;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-    max-width:580px;
-}
-
-.hero-buttons{
-
-    margin-top:30px;
-
-    display:flex;
-
-    gap:12px;
-
-    flex-wrap:wrap;
-}
-
-.btn{
-
-    border:none;
-
-    background:#111;
-
-    color:white;
-
-    padding:14px 28px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#b28a35;
-    transform:translateY(-3px);
-}
-
-.btn-gold{
-    background:#b28a35;
-    color:#111;
-}
-
-.hero-box{
-
-    width:380px;
-
-    height:430px;
-
-    background:#111;
-
-    color:white;
-
-    border-radius:35px;
-
-    display:flex;
-
-    align-items:center;
-
     justify-content:center;
 
     text-align:center;
 
-    box-shadow:
-    0 30px 60px rgba(0,0,0,.25);
+    padding:60px 20px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url("images/banner.jpg")
+    center/cover no-repeat;
+
+    color:white;
 }
 
-.hero-box h2{
-
-    font-size:40px;
-
-    letter-spacing:5px;
+.hero-content{
+    max-width:850px;
 }
 
-.hero-box p{
+.hero h1{
+    font-size:55px;
+    margin-bottom:18px;
+}
 
+.hero h1 span{
     color:#d4af37;
+}
 
-    margin-top:15px;
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:30px;
+    color:#eee;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 26px;
+    border-radius:30px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.btn-primary{
+    background:#d4af37;
+    color:#111;
+}
+
+.btn-secondary{
+    border:1px solid #d4af37;
+    color:white;
 }
 
 
 /* =========================
-   SECTIONS
+   GENERAL SECTION
 ========================= */
 
 section{
-    padding:75px 7%;
+    max-width:1250px;
+    margin:auto;
+    padding:70px 20px;
 }
 
 .section-title{
-
     text-align:center;
-
     margin-bottom:40px;
 }
 
-.section-title small{
-
-    color:#b28a35;
-
-    font-weight:bold;
-
-    letter-spacing:3px;
+.section-title h2{
+    font-size:34px;
+    margin-bottom:10px;
 }
 
-.section-title h2{
-
-    font-size:40px;
-
-    margin-top:10px;
+.section-title p{
+    color:#777;
 }
 
 
 /* =========================
-   CATEGORIES
+   CATEGORY CARDS
 ========================= */
 
-.categories{
+.category-grid{
 
     display:grid;
 
@@ -315,45 +215,63 @@ section{
     gap:20px;
 }
 
-.category{
+.category-card{
 
     background:white;
-
-    border:1px solid var(--border);
 
     padding:30px 20px;
 
     text-align:center;
 
-    border-radius:20px;
+    border-radius:18px;
 
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.category:hover{
-
-    transform:translateY(-7px);
+    border:1px solid #eee;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.1);
+    0 5px 20px rgba(0,0,0,.07);
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.13);
 }
 
 .category-icon{
-
     font-size:45px;
-
     margin-bottom:15px;
 }
 
-.category p{
+.category-card h3{
+    margin-bottom:8px;
+}
 
+.category-card p{
     color:#777;
+    font-size:13px;
+}
 
-    font-size:14px;
 
-    margin-top:7px;
+/* =========================
+   SHOP
+========================= */
+
+.shop-section{
+    background:#fff;
+    max-width:none;
+}
+
+.shop-inner{
+    max-width:1250px;
+    margin:auto;
 }
 
 
@@ -361,46 +279,97 @@ section{
    SEARCH
 ========================= */
 
-.shop-tools{
+.search-box{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.search-box input{
+
+    width:90%;
+    max-width:550px;
+
+    padding:14px 20px;
+
+    border:
+    1px solid #ddd;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    outline:none;
+}
+
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+.filters{
 
     display:flex;
 
     justify-content:center;
 
-    gap:12px;
-
-    margin-bottom:35px;
-
     flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:40px;
 }
 
-.search{
+.filter-btn{
 
-    width:350px;
+    padding:10px 18px;
 
-    padding:14px 18px;
-
-    border:1px solid var(--border);
-
-    border-radius:30px;
-
-    outline:none;
-
-    font-size:15px;
-}
-
-.filter{
-
-    padding:14px 20px;
-
-    border:1px solid var(--border);
-
-    border-radius:30px;
+    border:
+    1px solid #d4af37;
 
     background:white;
 
-    outline:none;
+    border-radius:25px;
+}
 
+.filter-btn:hover,
+.filter-btn.active{
+
+    background:#d4af37;
+
+    color:#111;
+}
+
+
+/* =========================
+   CATEGORY TITLE
+========================= */
+
+.selected-category{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    display:none;
+}
+
+.selected-category h2{
+    font-size:28px;
+}
+
+.selected-category button{
+
+    margin-top:10px;
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:9px 18px;
+
+    border-radius:20px;
 }
 
 
@@ -415,144 +384,81 @@ section{
     grid-template-columns:
     repeat(4,1fr);
 
-    gap:25px;
+    gap:22px;
 }
 
 .product{
 
     background:white;
 
-    border:1px solid var(--border);
-
-    border-radius:20px;
+    border-radius:15px;
 
     overflow:hidden;
 
-    transition:.3s;
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
 
-    position:relative;
+    transition:.3s;
 }
 
 .product:hover{
-
-    transform:translateY(-7px);
-
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.12);
+    transform:translateY(-5px);
 }
 
-.product-image{
-
-    height:250px;
-
-    background:#eee;
-
-    position:relative;
-
-    overflow:hidden;
-}
-
-.product-image img{
+.product-img{
 
     width:100%;
 
-    height:100%;
+    height:250px;
 
     object-fit:cover;
 
     display:block;
 
-    transition:.4s;
-}
-
-.product:hover
-.product-image img{
-
-    transform:scale(1.06);
-}
-
-.wishlist{
-
-    position:absolute;
-
-    top:12px;
-
-    right:12px;
-
-    width:40px;
-
-    height:40px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:white;
-
-    font-size:20px;
-
-    cursor:pointer;
-}
-
-.wishlist.active{
-    color:red;
+    background:#eee;
 }
 
 .product-info{
-    padding:20px;
+    padding:18px;
 }
 
-.product-info h3{
-    margin-bottom:8px;
+.product-category{
+
+    font-size:10px;
+
+    color:#a27c12;
+
+    text-transform:uppercase;
+
+    font-weight:bold;
 }
 
-.product-info p{
+.product h3{
 
-    color:#777;
+    font-size:18px;
 
-    font-size:14px;
+    margin:
+    8px 0;
+}
+
+.product p{
+
+    color:#666;
+
+    font-size:13px;
 
     line-height:1.5;
 
-    min-height:43px;
-}
-
-.rating{
-
-    color:#d4af37;
-
-    margin:8px 0;
-}
-
-.price-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    margin:15px 0;
+    min-height:40px;
 }
 
 .price{
 
-    font-size:21px;
+    font-size:20px;
 
     font-weight:bold;
 
-    color:#a27d2c;
-}
-
-.old-price{
-
-    font-size:13px;
-
-    color:#999;
-
-    text-decoration:line-through;
-
-    margin-left:5px;
+    margin:13px 0;
 }
 
 .product-buttons{
@@ -566,60 +472,217 @@ section{
 
     flex:1;
 
-    border:none;
-
     background:#111;
 
     color:white;
 
-    padding:12px;
+    border:none;
 
-    border-radius:25px;
+    border-radius:8px;
 
-    cursor:pointer;
+    padding:11px;
 }
 
-.view-btn{
+.wishlist{
 
-    border:1px solid #ddd;
+    width:43px;
+
+    border:
+    1px solid #ddd;
 
     background:white;
 
-    padding:12px 15px;
+    border-radius:8px;
 
-    border-radius:25px;
-
-    cursor:pointer;
+    font-size:20px;
 }
 
 
 /* =========================
-   ABOUT
+   CUSTOMIZE
 ========================= */
 
-.about{
+.customize-section{
+
+    max-width:none;
+
+    background:#111;
+
+    color:white;
+}
+
+.customize-inner{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+.customize-inner h2{
+
+    color:#d4af37;
+
+    font-size:35px;
+
+    margin-bottom:12px;
+}
+
+.customize-inner > p{
+
+    color:#ddd;
+
+    margin-bottom:30px;
+}
+
+.custom-form{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:15px;
+
+    text-align:left;
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:14px;
+}
+
+.custom-form textarea{
+
+    grid-column:
+    1 / -1;
+
+    min-height:110px;
+}
+
+.custom-form button{
+
+    grid-column:
+    1 / -1;
+
+    padding:14px;
+
+    background:#d4af37;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.feature{
+
+    text-align:center;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:15px;
+}
+
+.feature-icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#777;
+    font-size:13px;
+    line-height:1.5;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box{
 
     background:#111;
 
     color:white;
 
+    border-radius:20px;
+
+    padding:50px 25px;
+
     text-align:center;
 }
 
-.about-content{
+.contact-box h2{
 
-    max-width:750px;
+    color:#d4af37;
 
-    margin:auto;
+    font-size:32px;
+
+    margin-bottom:12px;
 }
 
-.about p{
+.contact-box p{
+    color:#ddd;
+}
 
-    color:#ccc;
+.contact-buttons{
 
-    line-height:1.8;
+    display:flex;
 
-    margin-top:20px;
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+}
+
+.contact-buttons a{
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:13px 25px;
+
+    border-radius:25px;
+
+    font-weight:bold;
 }
 
 
@@ -629,98 +692,26 @@ section{
 
 footer{
 
-    background:#080808;
+    background:#111;
 
     color:white;
 
     text-align:center;
 
-    padding:40px 20px;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#d4af37;
 }
 
 footer p{
 
-    color:#999;
+    color:#aaa;
 
-    margin-top:10px;
-}
+    margin-top:8px;
 
-.social{
-
-    margin-top:20px;
-}
-
-.social a{
-
-    color:#d4af37;
-
-    text-decoration:none;
-
-    margin:0 10px;
-}
-
-
-/* =========================
-   MODAL
-========================= */
-
-.overlay{
-
-    display:none;
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.7);
-
-    z-index:2000;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:20px;
-}
-
-.overlay.show{
-    display:flex;
-}
-
-.modal{
-
-    background:white;
-
-    width:100%;
-
-    max-width:550px;
-
-    max-height:90vh;
-
-    overflow:auto;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    position:relative;
-}
-
-.close{
-
-    position:absolute;
-
-    top:12px;
-
-    right:18px;
-
-    border:none;
-
-    background:none;
-
-    font-size:28px;
-
-    cursor:pointer;
+    font-size:13px;
 }
 
 
@@ -728,196 +719,122 @@ footer p{
    CART
 ========================= */
 
-.cart-item{
+.cart-panel{
 
-    display:flex;
+    position:fixed;
 
-    align-items:center;
+    top:0;
 
-    gap:15px;
+    right:-420px;
 
-    padding:15px 0;
+    width:400px;
 
-    border-bottom:1px solid #ddd;
-}
+    max-width:100%;
 
-.cart-image{
-
-    width:65px;
-
-    height:65px;
-
-    border-radius:10px;
-
-    object-fit:cover;
-}
-
-.cart-info{
-    flex:1;
-}
-
-.cart-info h4{
-    margin-bottom:5px;
-}
-
-.qty{
-
-    display:flex;
-
-    gap:8px;
-
-    align-items:center;
-
-    margin-top:8px;
-}
-
-.qty button{
-
-    width:28px;
-
-    height:28px;
-
-    border:1px solid #ddd;
+    height:100%;
 
     background:white;
 
-    border-radius:5px;
+    z-index:3000;
 
-    cursor:pointer;
+    padding:25px;
+
+    box-shadow:
+    -5px 0 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    overflow-y:auto;
 }
 
-.remove{
-
-    border:none;
-
-    background:none;
-
-    color:red;
-
-    cursor:pointer;
+.cart-panel.open{
+    right:0;
 }
 
-.cart-total{
+.cart-header{
 
     display:flex;
 
     justify-content:space-between;
 
-    font-size:21px;
-
-    font-weight:bold;
-
-    margin:20px 0;
-}
-
-
-/* =========================
-   FORM
-========================= */
-
-.form-group{
-
-    margin-bottom:15px;
-}
-
-.form-group label{
-
-    display:block;
-
-    margin-bottom:7px;
-}
-
-.form-group input,
-.form-group textarea{
-
-    width:100%;
-
-    padding:13px;
-
-    border:1px solid #ddd;
-
-    border-radius:10px;
-
-    outline:none;
-}
-
-.form-group textarea{
-
-    min-height:90px;
-
-    resize:vertical;
-}
-
-.full-btn{
-
-    width:100%;
-
-    border:none;
-
-    background:#111;
-
-    color:white;
-
-    padding:14px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-}
-
-
-/* =========================
-   PRODUCT DETAILS
-========================= */
-
-.detail-image{
-
-    width:100%;
-
-    max-height:350px;
-
-    object-fit:cover;
-
-    border-radius:15px;
+    align-items:center;
 
     margin-bottom:20px;
 }
 
+.close-cart{
 
-/* =========================
-   TOAST
-========================= */
+    border:none;
 
-.toast{
+    background:none;
 
-    position:fixed;
+    font-size:28px;
+}
 
-    bottom:25px;
+.cart-item{
 
-    right:25px;
+    display:flex;
 
-    background:#111;
+    gap:12px;
+
+    padding:13px 0;
+
+    border-bottom:
+    1px solid #ddd;
+}
+
+.cart-item img{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+}
+
+.cart-item h4{
+    margin-bottom:5px;
+}
+
+.remove-item{
+
+    margin-top:5px;
+
+    border:none;
+
+    background:none;
+
+    color:#d00;
+
+    font-size:12px;
+}
+
+.cart-total{
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    margin:22px 0;
+}
+
+.whatsapp-order{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#25D366;
 
     color:white;
 
-    padding:15px 22px;
-
-    border-radius:10px;
-
-    opacity:0;
-
-    transform:translateY(100px);
-
-    transition:.3s;
-
-    z-index:5000;
-}
-
-.toast.show{
-
-    opacity:1;
-
-    transform:translateY(0);
+    font-weight:bold;
 }
 
 
@@ -925,93 +842,124 @@ footer p{
    MOBILE
 ========================= */
 
-@media(max-width:1100px){
+@media(max-width:950px){
 
-    .products{
-
-        grid-template-columns:
-        repeat(3,1fr);
-    }
-
-    .categories{
-
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-}
-
-@media(max-width:800px){
-
-    nav{
+    .nav-links{
         display:none;
     }
 
-    .hero{
+    .products{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
 
-        flex-direction:column;
+    .category-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
 
-        text-align:center;
+    .features{
+        grid-template-columns:
+        repeat(2,1fr);
     }
 
     .hero h1{
-        font-size:46px;
+        font-size:42px;
+    }
+}
+
+
+@media(max-width:600px){
+
+    section{
+        padding:50px 15px;
     }
 
-    .hero-box{
+    .hero{
+        min-height:500px;
+    }
 
-        width:100%;
+    .hero h1{
+        font-size:36px;
+    }
 
-        max-width:380px;
+    .hero p{
+        font-size:15px;
+    }
+
+    .category-grid{
+
+        grid-template-columns:
+        1fr 1fr;
+
+        gap:12px;
+    }
+
+    .category-card{
+
+        padding:22px 10px;
+    }
+
+    .category-icon{
+        font-size:34px;
+    }
+
+    .category-card h3{
+        font-size:15px;
+    }
+
+    .category-card p{
+        font-size:11px;
     }
 
     .products{
 
         grid-template-columns:
-        repeat(2,1fr);
-    }
-}
+        1fr 1fr;
 
-@media(max-width:550px){
-
-    header{
-
-        padding:14px 4%;
+        gap:12px;
     }
 
-    .logo{
-
-        font-size:18px;
+    .product-img{
+        height:170px;
     }
 
-    .hero{
-
-        padding:60px 5%;
+    .product-info{
+        padding:12px;
     }
 
-    .hero h1{
-
-        font-size:38px;
+    .product h3{
+        font-size:14px;
     }
 
-    section{
-
-        padding:60px 5%;
+    .product p{
+        font-size:11px;
     }
 
-    .products,
-    .categories{
-
-        grid-template-columns:1fr;
+    .price{
+        font-size:17px;
     }
 
-    .search{
+    .features{
 
+        grid-template-columns:
+        1fr 1fr;
+    }
+
+    .custom-form{
+
+        grid-template-columns:
+        1fr;
+    }
+
+    .custom-form textarea,
+    .custom-form button{
+
+        grid-column:auto;
+    }
+
+    .cart-panel{
         width:100%;
-    }
-
-    .section-title h2{
-
-        font-size:32px;
     }
 
 }
@@ -1019,7 +967,6 @@ footer p{
 </style>
 
 </head>
-
 
 <body>
 
@@ -1030,76 +977,45 @@ footer p{
 
 <header>
 
-<div class="logo">
-CREATIVE ADDA
-</div>
+<div class="navbar">
 
-<nav>
+<a href="#home" class="logo">
+
+CREATIVE ADDA
+
+<span>PERSONALIZED GIFTS</span>
+
+</a>
+
+
+<nav class="nav-links">
 
 <a href="#home">Home</a>
 
-<a href="#categories">
-Categories
-</a>
+<a href="#categories">Categories</a>
 
-<a href="#shop">
-Shop
-</a>
+<a href="#shop">Shop</a>
 
-<a href="#about">
-About
-</a>
+<a href="#customize">Customize</a>
+
+<a href="#contact">Contact</a>
 
 </nav>
 
 
-<div class="header-buttons">
-
 <button
-class="header-btn"
-onclick="openLogin()">
-
-👤
-
-</button>
-
-
-<button
-class="header-btn"
-onclick="openWishlist()">
-
-❤️
-
-<span
-class="badge"
-id="wishCount">
-
-0
-
-</span>
-
-</button>
-
-
-<button
-class="header-btn"
+class="cart-button"
 onclick="openCart()">
 
-🛒
-
-<span
-class="badge"
-id="cartCount">
-
-0
-
-</span>
+🛒 Cart
+<span id="cartCount">0</span>
 
 </button>
 
 </div>
 
 </header>
+
 
 
 <!-- =========================
@@ -1112,30 +1028,17 @@ id="home">
 
 <div class="hero-content">
 
-<div class="hero-small">
-
-PREMIUM GIFT STORE
-
-</div>
-
 <h1>
 
-Make Every
-
-<span>
-Moment
-</span>
-
-Special.
+Gifts Made
+<span>Special</span>
 
 </h1>
 
 <p>
 
-Discover personalized gifts,
-customized mugs, beautiful photo
-frames, lamps and memorable gifts
-for the people you love.
+Personalized gifts created to turn
+special moments into beautiful memories.
 
 </p>
 
@@ -1143,146 +1046,188 @@ for the people you love.
 <div class="hero-buttons">
 
 <a
-href="#shop"
-class="btn">
+href="#categories"
+class="btn btn-primary">
 
-Shop Now
+Explore Gifts
 
 </a>
 
 
-<button
-class="btn btn-gold"
-onclick="openLogin()">
+<a
+href="#customize"
+class="btn btn-secondary">
 
-Create Account
+Customize Your Gift
 
-</button>
-
-</div>
-
-</div>
-
-
-<div class="hero-box">
-
-<div>
-
-<h2>
-
-CREATIVE<br>
-
-ADDA
-
-</h2>
-
-<p>
-
-Gifts • Memories • Emotions
-
-</p>
+</a>
 
 </div>
 
 </div>
 
 </section>
+
 
 
 <!-- =========================
      CATEGORIES
 ========================= -->
 
-<section
-id="categories">
+<section id="categories">
 
 <div class="section-title">
 
-<small>
-EXPLORE
-</small>
-
-<h2>
-Shop By Category
-</h2>
-
-</div>
-
-
-<div class="categories">
-
-
-<div
-class="category"
-onclick="filterCategory('Frame')">
-
-<div class="category-icon">
-🖼️
-</div>
-
-<h3>
-Photo Frames
-</h3>
+<h2>🎁 Shop by Category</h2>
 
 <p>
-Personalized memories
+Choose a category to explore our gifts.
 </p>
 
 </div>
 
 
+<div class="category-grid">
+
+
 <div
-class="category"
-onclick="filterCategory('Mug')">
+class="category-card"
+onclick="showCategory('couple','❤️ Couple Gifts')">
 
 <div class="category-icon">
-☕
+❤️
 </div>
 
-<h3>
-Customized Mugs
-</h3>
+<h3>Couple Gifts</h3>
 
 <p>
-Personalized mugs
+Romantic gifts for two
 </p>
 
 </div>
 
 
+
 <div
-class="category"
-onclick="filterCategory('Lamp')">
+class="category-card"
+onclick="showCategory('teddy','🧸 Teddy Gifts')">
 
 <div class="category-icon">
-💡
+🧸
 </div>
 
-<h3>
-Decorative Lamps
-</h3>
+<h3>Teddy Gifts</h3>
 
 <p>
-Beautiful lighting
+Cute gifts for someone special
 </p>
 
 </div>
 
 
+
 <div
-class="category"
-onclick="filterCategory('Gift')">
+class="category-card"
+onclick="showCategory('hamper','🎁 Mini Hampers')">
 
 <div class="category-icon">
 🎁
 </div>
 
-<h3>
-Gift Boxes
-</h3>
+<h3>Mini Hampers</h3>
 
 <p>
-Special surprises
+Small gifts, big happiness
+</p>
+
+</div>
+
+
+
+<div
+class="category-card"
+onclick="showCategory('birthday','🎂 Birthday Gifts')">
+
+<div class="category-icon">
+🎂
+</div>
+
+<h3>Birthday Gifts</h3>
+
+<p>
+Make birthdays memorable
+</p>
+
+</div>
+
+
+
+<div
+class="category-card"
+onclick="showCategory('personalized','✨ Personalized Gifts')">
+
+<div class="category-icon">
+✨
+</div>
+
+<h3>Personalized Gifts</h3>
+
+<p>
+Made especially for you
+</p>
+
+</div>
+
+
+
+<div
+class="category-card"
+onclick="showCategory('photo','📸 Photo Gifts')">
+
+<div class="category-icon">
+📸
+</div>
+
+<h3>Photo Gifts</h3>
+
+<p>
+Turn memories into gifts
+</p>
+
+</div>
+
+
+
+<div
+class="category-card"
+onclick="showCategory('premium','💎 Premium Gifts')">
+
+<div class="category-icon">
+💎
+</div>
+
+<h3>Premium Gifts</h3>
+
+<p>
+Elegant gifting collection
+</p>
+
+</div>
+
+
+
+<div
+class="category-card"
+onclick="showCategory('all','🛍️ All Gifts')">
+
+<div class="category-icon">
+🛍️
+</div>
+
+<h3>View All</h3>
+
+<p>
+Explore everything
 </p>
 
 </div>
@@ -1291,6 +1236,7 @@ Special surprises
 </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1298,98 +1244,1012 @@ Special surprises
 ========================= -->
 
 <section
+class="shop-section"
 id="shop">
+
+<div class="shop-inner">
+
 
 <div class="section-title">
 
-<small>
-CREATIVE ADDA COLLECTION
-</small>
-
-<h2>
-Our Products
-</h2>
-
-</div>
-
-
-<div class="shop-tools">
-
-<input
-class="search"
-id="search"
-placeholder="🔎 Search products..."
-oninput="renderProducts()">
-
-
-<select
-class="filter"
-id="filter"
-onchange="renderProducts()">
-
-<option value="All">
-All Products
-</option>
-
-<option value="Frame">
-Photo Frames
-</option>
-
-<option value="Mug">
-Mugs
-</option>
-
-<option value="Lamp">
-Lamps
-</option>
-
-<option value="Gift">
-Gift Boxes
-</option>
-
-</select>
-
-</div>
-
-
-<div
-class="products"
-id="products">
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section
-class="about"
-id="about">
-
-<div
-class="about-content">
-
-<h2>
-Why CREATIVE ADDA?
-</h2>
+<h2>Our Products</h2>
 
 <p>
-
-We create gifts that turn ordinary
-moments into unforgettable memories.
-From personalized photo frames to
-customized mugs and beautiful lamps,
-CREATIVE ADDA is made for special
-people and special occasions.
-
+Choose your favorite gift.
 </p>
 
 </div>
 
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔎 Search products..."
+onkeyup="searchProducts()">
+
+</div>
+
+
+<div class="filters">
+
+<button
+class="filter-btn active"
+onclick="showCategory('all','🛍️ All Gifts')">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('couple','❤️ Couple Gifts')">
+
+Couple
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('teddy','🧸 Teddy Gifts')">
+
+Teddy
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('hamper','🎁 Mini Hampers')">
+
+Hampers
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('birthday','🎂 Birthday Gifts')">
+
+Birthday
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('personalized','✨ Personalized')">
+
+Personalized
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('photo','📸 Photo Gifts')">
+
+Photo
+
+</button>
+
+<button
+class="filter-btn"
+onclick="showCategory('premium','💎 Premium')">
+
+Premium
+
+</button>
+
+</div>
+
+
+<div
+class="selected-category"
+id="selectedCategory">
+
+<h2 id="selectedCategoryTitle"></h2>
+
+<button onclick="showCategory('all','🛍️ All Gifts')">
+
+← View All Products
+
+</button>
+
+</div>
+
+
+
+<div
+class="products"
+id="productGrid">
+
+
+<!-- PRODUCT 1 -->
+
+<div
+class="product"
+data-category="photo personalized"
+data-name="Forever Memories Photo Frame">
+
+<img
+src="Untitled design (3).jpg"
+class="product-img"
+alt="Forever Memories Photo Frame">
+
+<div class="product-info">
+
+<span class="product-category">
+Photo Gifts
+</span>
+
+<h3>
+Forever Memories Photo Frame
+</h3>
+
+<p>
+Turn your favorite memory into a beautiful personalized frame.
+</p>
+
+<div class="price">
+₹399
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Forever Memories Photo Frame',
+399,
+'images/frame.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 2 -->
+
+<div
+class="product"
+data-category="couple"
+data-name="Love Glow LED Heart Lamp">
+
+<img
+src="WhatsApp Image 2026-09-28 at 6.45.47 PM.jpeg"
+class="product-img"
+alt="Love Glow LED Heart Lamp">
+
+<div class="product-info">
+
+<span class="product-category">
+Couple Gifts
+</span>
+
+<h3>
+Love Glow LED Heart Lamp
+</h3>
+
+<p>
+A romantic personalized lamp for someone special.
+</p>
+
+<div class="price">
+₹699
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Love Glow LED Heart Lamp',
+699,
+'images/led-heart-lamp.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 3 -->
+
+<div
+class="product"
+data-category="personalized"
+data-name="Custom Memory Mug">
+
+<img
+src=""
+class="product-img"
+alt="Custom Memory Mug">
+
+<div class="product-info">
+
+<span class="product-category">
+Personalized
+</span>
+
+<h3>
+Custom Memory Mug
+</h3>
+
+<p>
+Add a favorite photo, name or message.
+</p>
+
+<div class="price">
+₹249
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Custom Memory Mug',
+249,
+'images/mug.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 4 -->
+
+<div
+class="product"
+data-category="photo personalized"
+data-name="Spotify Music couple mug">
+
+<img
+src="download.jpg"
+class="product-img"
+alt="Spotify Music couple mug">
+
+<div class="product-info">
+
+<span class="product-category">
+Photo Gifts
+</span>
+
+<h3>
+Spotify Music couple mug
+</h3>
+
+<p>
+Turn a favorite song into a beautiful keepsake.
+</p>
+
+<div class="price">
+₹449
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Spotify Music couple mug',
+449,
+'images/spotify-mug.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 5 -->
+
+<div
+class="product"
+data-category="personalized"
+data-name="Name Photo Keychain">
+
+<img
+src="images/keychain.jpg"
+class="product-img"
+alt="Name Photo Keychain">
+
+<div class="product-info">
+
+<span class="product-category">
+Personalized
+</span>
+
+<h3>
+Name & Photo Keychain
+</h3>
+
+<p>
+Carry a special memory wherever you go.
+</p>
+
+<div class="price">
+₹199
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Name & Photo Keychain',
+199,
+'images/keychain.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 6 -->
+
+<div
+class="product"
+data-category="premium"
+data-name="Luxury Jewellery Box">
+
+<img
+src="images/jewellery-box.jpg"
+class="product-img"
+alt="Luxury Jewellery Box">
+
+<div class="product-info">
+
+<span class="product-category">
+Premium
+</span>
+
+<h3>
+Luxury Jewellery Box
+</h3>
+
+<p>
+Elegant jewellery storage and gifting.
+</p>
+
+<div class="price">
+₹599
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Luxury Jewellery Box',
+599,
+'images/jewellery-box.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 7 -->
+
+<div
+class="product"
+data-category="hamper birthday"
+data-name="Mini Love Hamper">
+
+<img
+src="images/mini-hamper.jpg"
+class="product-img"
+alt="Mini Love Hamper">
+
+<div class="product-info">
+
+<span class="product-category">
+Mini Hampers
+</span>
+
+<h3>
+Mini Love Hamper
+</h3>
+
+<p>
+Small surprises beautifully packed for someone special.
+</p>
+
+<div class="price">
+₹499
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Mini Love Hamper',
+499,
+'images/mini-hamper.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 8 -->
+
+<div
+class="product"
+data-category="couple"
+data-name="Couple Memories Gift Set">
+
+<img
+src="images/couple-set.jpg"
+class="product-img"
+alt="Couple Memories Gift Set">
+
+<div class="product-info">
+
+<span class="product-category">
+Couple Gifts
+</span>
+
+<h3>
+Couple Memories Gift Set
+</h3>
+
+<p>
+A romantic collection for two special hearts.
+</p>
+
+<div class="price">
+₹799
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Couple Memories Gift Set',
+799,
+'images/couple-set.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 9 -->
+
+<div
+class="product"
+data-category="soler lamp"
+data-name="soler lamp">
+
+<img
+src="WhatsApp Image 2026-09-28 at 6.47.45 PM.jpeg"
+class="product-img"
+alt="soler lamp">
+
+<div class="product-info">
+
+<span class="product-category">
+Soler Lamps
+</span>
+
+<h3>
+soler lamp
+</h3>
+
+<p>
+A cute surprise for birthdays and special occasions.
+</p>
+
+<div class="price">
+₹349
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'soler lamp',
+349,
+'images/soler-lamp.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 10 -->
+
+<div
+class="product"
+data-category="personalized premium"
+data-name="Personalized Name Wallet">
+
+<img
+src="WhatsApp Image 2026-10-01 at 5.23.25 PM.jpeg"
+class="product-img"
+alt="Personalized Name Wallet">
+
+<div class="product-info">
+
+<span class="product-category">
+Personalized
+</span>
+
+<h3>
+Personalized Name Wallet
+</h3>
+
+<p>
+A stylish wallet customized with a name.
+</p>
+
+<div class="price">
+₹499
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Personalized Name Wallet',
+499,
+'images/wallet.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 11 -->
+
+<div
+class="product"
+data-category="premium hamper"
+data-name="Premium Gift Hamper">
+
+<img
+src="images/premium-hamper.jpg"
+class="product-img"
+alt="Premium Gift Hamper">
+
+<div class="product-info">
+
+<span class="product-category">
+Premium Gifts
+</span>
+
+<h3>
+Premium Gift Hamper
+</h3>
+
+<p>
+A beautifully arranged collection of thoughtful gifts.
+</p>
+
+<div class="price">
+₹899
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Premium Gift Hamper',
+899,
+'images/premium-hamper.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 12 -->
+
+<div
+class="product"
+data-category="photo personalized"
+data-name="Polaroid Memory Collection">
+
+<img
+src="images/polaroid.jpg"
+class="product-img"
+alt="Polaroid Memory Collection">
+
+<div class="product-info">
+
+<span class="product-category">
+Photo Gifts
+</span>
+
+<h3>
+Polaroid Memory Collection
+</h3>
+
+<p>
+Keep your favorite moments close.
+</p>
+
+<div class="price">
+₹299
+</div>
+
+<div class="product-buttons">
+
+<button
+class="add-cart"
+onclick="addToCart(
+'Polaroid Memory Collection',
+299,
+'images/polaroid.jpg'
+)">
+
+Add to Cart
+
+</button>
+
+<button class="wishlist">
+♡
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
+
+
+
+<!-- =========================
+     CUSTOMIZE
+========================= -->
+
+<section
+class="customize-section"
+id="customize">
+
+<div class="customize-inner">
+
+<h2>
+✨ Personalize Your Gift
+</h2>
+
+<p>
+Choose a product and tell us how you want it customized.
+</p>
+
+
+<form
+class="custom-form"
+onsubmit="sendCustomization(event)">
+
+
+<input
+type="text"
+id="customerName"
+placeholder="Your Name"
+required>
+
+
+<input
+type="text"
+id="customProduct"
+placeholder="Product Name"
+required>
+
+
+<input
+type="text"
+id="customPhoto"
+placeholder="Photo / Design">
+
+
+<input
+type="text"
+id="customMessage"
+placeholder="Name or Message">
+
+
+<textarea
+id="customDetails"
+placeholder="Tell us your customization requirements...">
+</textarea>
+
+
+<button type="submit">
+
+📲 Send Customization Request
+
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+Why Choose CREATIVE ADDA?
+</h2>
+
+<p>
+Thoughtful gifting made simple.
+</p>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎨
+</div>
+
+<h3>
+Personalized
+</h3>
+
+<p>
+Create gifts made especially for your loved ones.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+💝
+</div>
+
+<h3>
+Made With Love
+</h3>
+
+<p>
+Every gift is designed to make moments memorable.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎁
+</div>
+
+<h3>
+Beautiful Packaging
+</h3>
+
+<p>
+Perfectly presented and ready for gifting.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📲
+</div>
+
+<h3>
+Easy Ordering
+</h3>
+
+<p>
+Choose your gift and order easily through WhatsApp.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+<div class="contact-box">
+
+<h2>
+Make Someone Smile ❤️
+</h2>
+
+<p>
+Have a question or want to place an order?
+Contact CREATIVE ADDA.
+</p>
+
+
+<div class="contact-buttons">
+
+<a
+href="#"
+onclick="openWhatsApp()">
+
+📲 WhatsApp
+
+</a>
+
+
+<a href="#">
+📸 Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
 
 
 <!-- =========================
@@ -1398,25 +2258,13 @@ people and special occasions.
 
 <footer>
 
-<h3>
+<strong>
 CREATIVE ADDA
-</h3>
+</strong>
 
 <p>
-Premium Gifts • Personalized Memories • Special Moments
+Personalized Gifts • Made with Love
 </p>
-
-<div class="social">
-
-<a href="#">
-Instagram
-</a>
-
-<a href="#">
-WhatsApp
-</a>
-
-</div>
 
 <p>
 © 2026 CREATIVE ADDA. All Rights Reserved.
@@ -1425,1399 +2273,515 @@ WhatsApp
 </footer>
 
 
+
 <!-- =========================
-     CART MODAL
+     CART
 ========================= -->
 
 <div
-class="overlay"
-id="cartModal">
+class="cart-panel"
+id="cartPanel">
 
-<div class="modal">
 
-<button
-class="close"
-onclick="closeModal('cartModal')">
-
-×
-
-</button>
+<div class="cart-header">
 
 <h2>
 🛒 Your Cart
 </h2>
 
-<div
-id="cartItems">
+<button
+class="close-cart"
+onclick="closeCart()">
+
+×
+
+</button>
 
 </div>
 
-<div
-class="cart-total">
 
-<span>
-Total
+<div id="cartItems"></div>
+
+
+<div class="cart-total">
+
+Total: ₹
+<span id="cartTotal">
+0
 </span>
 
-<span
-id="cartTotal">
-
-₹0
-
-</span>
-
-</div>
-
-<button
-class="full-btn"
-onclick="openCheckout()">
-
-Proceed to Checkout
-
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     WISHLIST
-========================= -->
-
-<div
-class="overlay"
-id="wishModal">
-
-<div class="modal">
-
-<button
-class="close"
-onclick="closeModal('wishModal')">
-
-×
-
-</button>
-
-<h2>
-❤️ Wishlist
-</h2>
-
-<div
-id="wishItems">
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     DETAILS
-========================= -->
-
-<div
-class="overlay"
-id="detailsModal">
-
-<div class="modal">
-
-<button
-class="close"
-onclick="closeModal('detailsModal')">
-
-×
-
-</button>
-
-<div
-id="productDetails">
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     LOGIN
-========================= -->
-
-<div
-class="overlay"
-id="loginModal">
-
-<div class="modal">
-
-<button
-class="close"
-onclick="closeModal('loginModal')">
-
-×
-
-</button>
-
-<h2>
-👤 CREATIVE ADDA Account
-</h2>
-
-
-<div class="form-group">
-
-<label>
-Your Name
-</label>
-
-<input
-id="loginName"
-placeholder="Enter your name">
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Email
-</label>
-
-<input
-id="loginEmail"
-type="email"
-placeholder="Enter your email">
-
 </div>
 
 
 <button
-class="full-btn"
-onclick="loginUser()">
+class="whatsapp-order"
+onclick="orderOnWhatsApp()">
 
-Create Account
-
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     CHECKOUT
-========================= -->
-
-<div
-class="overlay"
-id="checkoutModal">
-
-<div class="modal">
-
-<button
-class="close"
-onclick="closeModal('checkoutModal')">
-
-×
+📲 Order on WhatsApp
 
 </button>
 
-<h2>
-📦 Order Details
-</h2>
-
-
-<div class="form-group">
-
-<label>
-Full Name
-</label>
-
-<input
-id="orderName"
-placeholder="Your full name">
 
 </div>
 
-
-<div class="form-group">
-
-<label>
-Mobile Number
-</label>
-
-<input
-id="orderPhone"
-placeholder="10 digit mobile number">
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Delivery Address
-</label>
-
-<textarea
-id="orderAddress"
-placeholder="Complete delivery address">
-
-</textarea>
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Coupon Code
-</label>
-
-<input
-id="coupon"
-placeholder="Try CREATIVE10">
-
-</div>
-
-
-<button
-class="full-btn"
-onclick="placeOrder()">
-
-Order on WhatsApp
-
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     TOAST
-========================= -->
-
-<div
-class="toast"
-id="toast">
-
-Added to cart!
-
-</div>
 
 
 <script>
 
-
 /* =========================
-   PRODUCTS
+   WHATSAPP NUMBER
 ========================= */
 
-const products = [
-
-{
-id:1,
-
-name:"Personalized Couple Photo Frame",
-
-category:"Frame",
-
-price:499,
-
-oldPrice:699,
-
-image:"WhatsApp Image 2026-09-28 at 6.39.05 PM.jpeg",
-
-rating:"★★★★★",
-
-description:
-"Beautiful personalized photo frame for birthdays, couples, anniversaries and special memories."
-},
-
-
-{
-id:2,
-
-name:"Personalized Birthday Photo Frame",
-
-category:"Frame",
-
-price:549,
-
-oldPrice:699,
-
-image:"WhatsApp Image 2026-09-27 at 9.18.08 PM.jpeg",
-
-rating:"★★★★★",
-
-description:
-"Create a special frame with your favorite photo, name or message."
-},
-
-
-{
-id:3,
-
-name:"Spotify Couple  Music Mug",
-
-category:"Mug",
-
-price:499,
-
-oldPrice:599,
-
-image:"download.jpg",
-
-rating:"★★★★☆",
-
-description:
-"Stylish music-inspired mug designed for music lovers."
-},
-
-
-{
-id:4,
-
-name:"birthday-themed mug",
-
-category:"Mug",
-
-price:249,
-
-oldPrice:499,
-
-image:"Gemini_Generated_Image_qn1w78qn1w78qn1w.jpg",
-
-rating:"★★★★☆",
-
-description:
-"Stylish music-inspired mug designed for birthdays and special occasions."
-},
-
-
-{
-id:5,
-
-name:"LED Heart Lamp",
-
-category:"Lamp",
-
-price:699,
-
-oldPrice:999,
-
-image:"WhatsApp Image 2026-09-28 at 6.45.47 PM.jpeg",
-
-rating:"★★★★★",
-
-description:
-"Beautiful LED heart lamp for romantic and memorable occasions."
-},
-
-
-{
-id:6,
-
-name:"Solar Decorative Lamp",
-
-category:"Lamp",
-
-price:349,
-
-oldPrice:599,
-
-image:"WhatsApp Image 2026-09-28 at 6.47.45 PM.jpeg",
-
-rating:"★★★★☆",
-
-description:
-"Decorative lighting for your room, balcony or special occasion."
-},
-
-
-{
-id:7,
-
-name:"Premium Gift Box",
-
-category:"Gift",
-
-price:799,
-
-oldPrice:999,
-
-image:"images/gift-box.jpg",
-
-rating:"★★★★★",
-
-description:
-"Premium gift box designed for birthdays, anniversaries and celebrations."
-},
-
-
-{
-id:8,
-
-name:"Best Friend Frame",
-
-category:"Frame",
-
-price:549,
-
-oldPrice:749,
-
-image:"Untitled design (3).jpg",
-
-rating:"★★★★★",
-
-description:
-"Personalized frame made specially for your best friend."
-},
-
-
-{
-id:9,
-
-name:"Birthday Gift Set",
-
-category:"Gift",
-
-price:1499,
-
-oldPrice:1199,
-
-image:"WhatsApp Image 2026-09-28 at 6.54.08 PM.jpeg",
-
-rating:"★★★★★",
-
-description:
-"Complete birthday gift set for someone special."
-}
-
-];
-
-
-let cart =
-JSON.parse(
-localStorage.getItem("creativeCart")
-) || [];
-
-
-let wishlist =
-JSON.parse(
-localStorage.getItem("creativeWishlist")
-) || [];
-
-
-/* =========================
-   SHOW PRODUCTS
-========================= */
-
-function renderProducts(){
-
-const container =
-document.getElementById("products");
-
-const search =
-document
-.getElementById("search")
-.value
-.toLowerCase();
-
-const filter =
-document
-.getElementById("filter")
-.value;
-
-
-const list =
-products.filter(product=>{
-
-const searchMatch =
-product.name
-.toLowerCase()
-.includes(search);
-
-const categoryMatch =
-filter === "All" ||
-product.category === filter;
-
-return searchMatch &&
-categoryMatch;
-
-});
-
-
-container.innerHTML="";
-
-
-if(list.length===0){
-
-container.innerHTML=
-"<p>No products found.</p>";
-
-return;
-
-}
-
-
-list.forEach(product=>{
-
-const liked =
-wishlist.includes(product.id);
-
-
-container.innerHTML += `
-
-<div class="product">
-
-
-<div class="product-image">
-
-<img
-src="${product.image}"
-alt="${product.name}"
-onerror="this.src='https://placehold.co/600x500?text=Product+Photo'"
->
-
-
-<button
-class="wishlist ${liked ? "active":""}"
-onclick="toggleWishlist(${product.id})">
-
-${liked ? "❤️":"♡"}
-
-</button>
-
-</div>
-
-
-<div class="product-info">
-
-
-<h3>
-${product.name}
-</h3>
-
-
-<div class="rating">
-${product.rating}
-</div>
-
-
-<p>
-${product.description}
-</p>
-
-
-<div class="price-row">
-
-<div>
-
-<span class="price">
-₹${product.price}
-</span>
-
-<span class="old-price">
-₹${product.oldPrice}
-</span>
-
-</div>
-
-</div>
-
-
-<div class="product-buttons">
-
-
-<button
-class="add-cart"
-onclick="addToCart(${product.id})">
-
-🛒 Add to Cart
-
-</button>
-
-
-<button
-class="view-btn"
-onclick="showDetails(${product.id})">
-
-View
-
-</button>
-
-
-</div>
-
-
-</div>
-
-</div>
-
-`;
-
-});
-
-}
+/*
+CHANGE THIS NUMBER
+TO YOUR REAL WHATSAPP NUMBER.
+
+Example:
+919876543210
+*/
+
+const WHATSAPP_NUMBER =
+"919999999999";
 
 
 /* =========================
    CART
 ========================= */
 
-function addToCart(id){
-
-const item =
-cart.find(item=>item.id===id);
+let cart = [];
 
 
-if(item){
-
-item.qty++;
-
-}else{
+function addToCart(
+    name,
+    price,
+    image
+){
 
 cart.push({
 
-id:id,
+name:name,
 
-qty:1
+price:price,
+
+image:image
 
 });
 
-}
+updateCart();
 
-
-saveCart();
-
-showToast(
-"Product added to cart 🛒"
-);
+openCart();
 
 }
 
 
-function saveCart(){
+function updateCart(){
 
-localStorage.setItem(
-"creativeCart",
-JSON.stringify(cart)
-);
-
-updateCartCount();
-
-}
+document
+.getElementById("cartCount")
+.innerText =
+cart.length;
 
 
-function updateCartCount(){
+const container =
+document.getElementById("cartItems");
 
-let count=0;
 
-cart.forEach(item=>{
-count += item.qty;
+container.innerHTML = "";
+
+
+let total = 0;
+
+
+cart.forEach(
+(item,index)=>{
+
+total += item.price;
+
+
+container.innerHTML += `
+
+<div class="cart-item">
+
+<img
+src="${item.image}"
+alt="${item.name}">
+
+<div>
+
+<h4>
+${item.name}
+</h4>
+
+<p>
+₹${item.price}
+</p>
+
+<button
+class="remove-item"
+onclick="removeItem(${index})">
+
+Remove
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
 });
 
-document.getElementById("cartCount")
-.textContent=count;
+
+document
+.getElementById("cartTotal")
+.innerText =
+total;
+
+}
+
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+updateCart();
 
 }
 
 
 function openCart(){
 
-renderCart();
+document
+.getElementById("cartPanel")
+.classList.add("open");
+
+}
+
+
+function closeCart(){
 
 document
-.getElementById("cartModal")
-.classList.add("show");
+.getElementById("cartPanel")
+.classList.remove("open");
 
 }
 
 
-function renderCart(){
+/* =========================
+   CATEGORY FILTER
+========================= */
 
-const container =
-document.getElementById("cartItems");
+function showCategory(
+category,
+title
+){
 
-
-if(cart.length===0){
-
-container.innerHTML=
-"<p>Your cart is empty.</p>";
-
-document.getElementById("cartTotal")
-.textContent="₹0";
-
-return;
-
-}
+const products =
+document
+.querySelectorAll(".product");
 
 
-let total=0;
+const buttons =
+document
+.querySelectorAll(".filter-btn");
 
-container.innerHTML="";
 
+/* Reset buttons */
 
-cart.forEach(item=>{
-
-const product =
-products.find(
-p=>p.id===item.id
+buttons.forEach(
+button =>
+button.classList.remove("active")
 );
 
 
-total +=
-product.price *
-item.qty;
+/* Match filter button */
 
+buttons.forEach(
+button => {
 
-container.innerHTML += `
+if(
+button.innerText
+.toLowerCase()
+.includes(category)
+){
 
-<div class="cart-item">
+button.classList.add("active");
 
-
-<img
-class="cart-image"
-src="${product.image}"
-alt="${product.name}"
->
-
-
-<div class="cart-info">
-
-<h4>
-${product.name}
-</h4>
-
-<small>
-₹${product.price}
-</small>
-
-
-<div class="qty">
-
-<button
-onclick="changeQty(${product.id},-1)">
-−
-</button>
-
-<span>
-${item.qty}
-</span>
-
-<button
-onclick="changeQty(${product.id},1)">
-+
-</button>
-
-</div>
-
-</div>
-
-
-<button
-class="remove"
-onclick="removeCart(${product.id})">
-
-Remove
-
-</button>
-
-
-</div>
-
-`;
+}
 
 });
 
 
-document.getElementById("cartTotal")
-.textContent="₹"+total;
+/* Filter products */
 
-}
+products.forEach(
+product => {
 
-
-function changeQty(id,change){
-
-const item =
-cart.find(
-x=>x.id===id
-);
+const categories =
+product.dataset.category
+.toLowerCase()
+.split(" ");
 
 
-if(!item)return;
+if(
+category === "all" ||
+categories.includes(category)
+){
 
-
-item.qty += change;
-
-
-if(item.qty<=0){
-
-cart =
-cart.filter(
-x=>x.id!==id
-);
-
-}
-
-
-saveCart();
-
-renderCart();
-
-}
-
-
-function removeCart(id){
-
-cart =
-cart.filter(
-item=>item.id!==id
-);
-
-saveCart();
-
-renderCart();
-
-}
-
-
-/* =========================
-   WISHLIST
-========================= */
-
-function toggleWishlist(id){
-
-if(wishlist.includes(id)){
-
-wishlist =
-wishlist.filter(
-x=>x!==id
-);
-
-showToast(
-"Removed from wishlist"
-);
+product.style.display =
+"block";
 
 }else{
 
-wishlist.push(id);
-
-showToast(
-"Added to wishlist ❤️"
-);
+product.style.display =
+"none";
 
 }
-
-
-localStorage.setItem(
-"creativeWishlist",
-JSON.stringify(wishlist)
-);
-
-
-document.getElementById("wishCount")
-.textContent =
-wishlist.length;
-
-
-renderProducts();
-
-}
-
-
-function openWishlist(){
-
-const container =
-document.getElementById("wishItems");
-
-
-if(wishlist.length===0){
-
-container.innerHTML=
-"<p>Your wishlist is empty.</p>";
-
-}else{
-
-container.innerHTML="";
-
-
-wishlist.forEach(id=>{
-
-const product =
-products.find(
-p=>p.id===id
-);
-
-
-container.innerHTML += `
-
-<div class="cart-item">
-
-
-<img
-class="cart-image"
-src="${product.image}"
->
-
-
-<div class="cart-info">
-
-<h4>
-${product.name}
-</h4>
-
-<small>
-₹${product.price}
-</small>
-
-</div>
-
-
-<button
-class="add-cart"
-onclick="addToCart(${product.id})">
-
-Add
-
-</button>
-
-
-</div>
-
-`;
 
 });
 
-}
 
+/* Category title */
 
+const titleBox =
 document
-.getElementById("wishModal")
-.classList.add("show");
+.getElementById("selectedCategory");
 
-}
-
-
-/* =========================
-   PRODUCT DETAILS
-========================= */
-
-function showDetails(id){
-
-const product =
-products.find(
-p=>p.id===id
-);
-
-
-document.getElementById(
-"productDetails"
-).innerHTML = `
-
-
-<img
-class="detail-image"
-src="${product.image}"
-alt="${product.name}"
->
-
-
-<h2>
-${product.name}
-</h2>
-
-
-<div class="rating">
-
-${product.rating}
-
-</div>
-
-
-<p style="
-margin:15px 0;
-line-height:1.7;
-color:#777;
-">
-
-${product.description}
-
-</p>
-
-
-<h2 style="
-color:#a27d2c;
-margin-bottom:20px;
-">
-
-₹${product.price}
-
-</h2>
-
-
-<button
-class="full-btn"
-onclick="
-addToCart(${product.id});
-closeModal('detailsModal');
-">
-
-🛒 Add To Cart
-
-</button>
-
-`;
-
-
+const titleText =
 document
-.getElementById("detailsModal")
-.classList.add("show");
+.getElementById("selectedCategoryTitle");
+
+
+if(category === "all"){
+
+titleBox.style.display =
+"none";
+
+}else{
+
+titleBox.style.display =
+"block";
+
+titleText.innerText =
+title;
 
 }
 
 
-/* =========================
-   CATEGORY
-========================= */
-
-function filterCategory(category){
-
-document
-.getElementById("filter")
-.value =
-category;
-
+/* Go to products */
 
 document
 .getElementById("shop")
 .scrollIntoView({
+
 behavior:"smooth"
+
 });
-
-
-renderProducts();
 
 }
 
 
 /* =========================
-   LOGIN
+   SEARCH
 ========================= */
 
-function openLogin(){
+function searchProducts(){
 
+const search =
 document
-.getElementById("loginModal")
-.classList.add("show");
+.getElementById("searchInput")
+.value
+.toLowerCase();
 
-}
+
+const products =
+document
+.querySelectorAll(".product");
 
 
-function loginUser(){
+products.forEach(
+product => {
 
 const name =
-document
-.getElementById("loginName")
-.value
-.trim();
-
-
-const email =
-document
-.getElementById("loginEmail")
-.value
-.trim();
-
-
-if(!name || !email){
-
-showToast(
-"Please enter your details"
-);
-
-return;
-
-}
-
-
-localStorage.setItem(
-"creativeUser",
-JSON.stringify({
-name:name,
-email:email
-})
-);
-
-
-closeModal("loginModal");
-
-
-showToast(
-"Welcome "+name+" 🎉"
-);
-
-}
-
-
-/* =========================
-   CHECKOUT
-========================= */
-
-function openCheckout(){
-
-if(cart.length===0){
-
-showToast(
-"Your cart is empty"
-);
-
-return;
-
-}
-
-
-closeModal(
-"cartModal"
-);
-
-
-document
-.getElementById("checkoutModal")
-.classList.add("show");
-
-}
-
-
-function placeOrder(){
-
-const name =
-document
-.getElementById("orderName")
-.value
-.trim();
-
-
-const phone =
-document
-.getElementById("orderPhone")
-.value
-.trim();
-
-
-const address =
-document
-.getElementById("orderAddress")
-.value
-.trim();
-
-
-const coupon =
-document
-.getElementById("coupon")
-.value
-.trim();
-
-
-if(!name || !phone || !address){
-
-showToast(
-"Please complete your details"
-);
-
-return;
-
-}
-
-
-let total=0;
-
-
-let message =
-"Hello CREATIVE ADDA!%0A%0A";
-
-
-message +=
-"🛍️ NEW ORDER%0A%0A";
-
-
-cart.forEach(item=>{
-
-const product =
-products.find(
-p=>p.id===item.id
-);
-
-
-total +=
-product.price *
-item.qty;
-
-
-message +=
-encodeURIComponent(
-product.name
-)+
-" x "+
-item.qty+
-" = ₹"+
-(product.price*item.qty)+
-"%0A";
-
-});
-
-
-let discount=0;
+product.dataset.name
+.toLowerCase();
 
 
 if(
-coupon.toUpperCase()
-===
-"CREATIVE10"
+name.includes(search)
 ){
 
-discount =
-Math.round(
-total*0.10
-);
+product.style.display =
+"block";
+
+}else{
+
+product.style.display =
+"none";
+
+}
+
+});
 
 }
 
 
-const finalTotal =
-total-discount;
+/* =========================
+   WHATSAPP ORDER
+========================= */
+
+function orderOnWhatsApp(){
+
+if(cart.length === 0){
+
+alert(
+"Your cart is empty."
+);
+
+return;
+
+}
+
+
+let message =
+"Hello CREATIVE ADDA,%0A%0AI want to order:%0A";
+
+
+let total = 0;
+
+
+cart.forEach(
+item => {
+
+message +=
+"- " +
+item.name +
+" - ₹" +
+item.price +
+"%0A";
+
+total +=
+item.price;
+
+});
 
 
 message +=
-"%0ATotal: ₹"+
+"%0ATotal: ₹" +
 total;
 
 
-message +=
-"%0ADiscount: ₹"+
-discount;
+window.open(
+
+"https://wa.me/" +
+WHATSAPP_NUMBER +
+"?text=" +
+message,
+
+"_blank"
+
+);
+
+}
 
 
-message +=
-"%0AFinal Total: ₹"+
-finalTotal;
+/* =========================
+   CUSTOMIZATION
+========================= */
+
+function sendCustomization(event){
+
+event.preventDefault();
 
 
-message +=
-"%0A%0ACustomer: "+
-encodeURIComponent(name);
+const name =
+document
+.getElementById("customerName")
+.value;
 
 
-message +=
-"%0APhone: "+
-encodeURIComponent(phone);
+const product =
+document
+.getElementById("customProduct")
+.value;
 
 
-message +=
-"%0AAddress: "+
-encodeURIComponent(address);
+const photo =
+document
+.getElementById("customPhoto")
+.value;
 
 
-/*
-
-IMPORTANT:
-
-CHANGE THIS NUMBER
-
-919999999999
-
-TO YOUR REAL
-WHATSAPP NUMBER.
-
-*/
+const customMessage =
+document
+.getElementById("customMessage")
+.value;
 
 
-const whatsapp =
-"https://wa.me/916267746790?text="+
-message;
+const details =
+document
+.getElementById("customDetails")
+.value;
+
+
+const message = `
+
+Hello CREATIVE ADDA,
+
+I want to personalize a gift.
+
+Name:
+${name}
+
+Product:
+${product}
+
+Photo / Design:
+${photo}
+
+Name / Message:
+${customMessage}
+
+Customization Details:
+${details}
+
+`;
 
 
 window.open(
-whatsapp,
+
+"https://wa.me/" +
+WHATSAPP_NUMBER +
+"?text=" +
+encodeURIComponent(message),
+
 "_blank"
-);
 
-
-cart=[];
-
-saveCart();
-
-
-closeModal(
-"checkoutModal"
-);
-
-
-showToast(
-"Order created 🎉"
 );
 
 }
 
 
 /* =========================
-   CLOSE MODAL
+   WHATSAPP CONTACT
 ========================= */
 
-function closeModal(id){
+function openWhatsApp(){
 
-document
-.getElementById(id)
-.classList.remove("show");
+window.open(
+
+"https://wa.me/" +
+WHATSAPP_NUMBER,
+
+"_blank"
+
+);
 
 }
-
-
-/* =========================
-   TOAST
-========================= */
-
-function showToast(message){
-
-const toast =
-document.getElementById("toast");
-
-
-toast.textContent =
-message;
-
-
-toast.classList.add("show");
-
-
-setTimeout(()=>{
-
-toast.classList.remove("show");
-
-},2200);
-
-}
-
-
-/* =========================
-   START WEBSITE
-========================= */
-
-renderProducts();
-
-updateCartCount();
-
-document
-.getElementById("wishCount")
-.textContent =
-wishlist.length;
-
 
 </script>
 
-</body>
 
+</body>
 </html>
-```
