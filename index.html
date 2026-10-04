@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +24,13 @@ content="CREATIVE ADDA - Premium personalized gifts, photo frames, mugs, hampers
     padding:0;
     box-sizing:border-box;
     scroll-behavior:smooth;
+}
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
 :root{
@@ -58,6 +64,7 @@ button{
 
 img{
     background:#191919;
+    max-width:100%;
 }
 
 
@@ -783,10 +790,14 @@ footer strong{
 
 .cart-item-info{
     flex:1;
+
+    min-width:0;
 }
 
 .cart-item-info h4{
     font-size:14px;
+
+    overflow-wrap:anywhere;
 }
 
 .cart-item-info p{
@@ -842,6 +853,10 @@ footer strong{
     padding:15px;
 
     overflow-y:auto;
+
+    overflow-x:hidden;
+
+    -webkit-overflow-scrolling:touch;
 }
 
 .modal-overlay.show{
@@ -898,6 +913,8 @@ footer strong{
     color:#fff;
 
     font-size:30px;
+
+    flex-shrink:0;
 }
 
 
@@ -912,6 +929,10 @@ footer strong{
     1.75fr 1fr;
 
     min-height:810px;
+
+    width:100%;
+
+    min-width:0;
 }
 
 .builder-main{
@@ -920,6 +941,8 @@ footer strong{
     border-right:1px solid #292929;
 
     min-height:810px;
+
+    min-width:0;
 }
 
 .builder-summary{
@@ -932,6 +955,8 @@ footer strong{
     position:sticky;
 
     top:0;
+
+    min-width:0;
 }
 
 .steps{
@@ -942,6 +967,10 @@ footer strong{
     margin-bottom:30px;
 
     overflow-x:auto;
+
+    max-width:100%;
+
+    scrollbar-width:thin;
 }
 
 .step{
@@ -960,6 +989,8 @@ footer strong{
     color:#777;
 
     font-size:12px;
+
+    flex-shrink:0;
 }
 
 .step.active{
@@ -974,6 +1005,10 @@ footer strong{
 
 .builder-step{
     display:none;
+
+    width:100%;
+
+    min-width:0;
 }
 
 .builder-step.active{
@@ -1006,6 +1041,8 @@ footer strong{
     repeat(2,1fr);
 
     gap:18px;
+
+    width:100%;
 }
 
 .box-option{
@@ -1030,6 +1067,8 @@ footer strong{
     text-align:center;
 
     transition:.3s;
+
+    cursor:pointer;
 }
 
 .box-option:hover,
@@ -1060,6 +1099,18 @@ footer strong{
     color:#777;
 
     font-size:13px;
+
+    margin-bottom:5px;
+}
+
+.box-price{
+    color:var(--gold);
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    margin-top:4px;
 }
 
 
@@ -1074,6 +1125,10 @@ footer strong{
     repeat(4,1fr);
 
     gap:14px;
+
+    width:100%;
+
+    min-width:0;
 }
 
 .builder-category{
@@ -1094,6 +1149,8 @@ footer strong{
     font-size:14px;
 
     transition:.3s;
+
+    min-width:0;
 }
 
 .builder-category:hover{
@@ -1131,7 +1188,13 @@ footer strong{
 
     overflow-y:auto;
 
+    overflow-x:hidden;
+
     padding-right:8px;
+
+    width:100%;
+
+    min-width:0;
 }
 
 .builder-product{
@@ -1146,6 +1209,8 @@ footer strong{
     cursor:pointer;
 
     transition:.3s;
+
+    min-width:0;
 }
 
 .builder-product:hover{
@@ -1166,10 +1231,14 @@ footer strong{
 
 .builder-product-info{
     padding:12px;
+
+    min-width:0;
 }
 
 .builder-product-info h4{
     font-size:14px;
+
+    overflow-wrap:anywhere;
 }
 
 .builder-product-price{
@@ -1197,6 +1266,10 @@ footer strong{
     border:1px solid #292929;
 
     border-radius:12px;
+
+    width:100%;
+
+    min-width:0;
 }
 
 #builderColorArea h4{
@@ -1211,6 +1284,8 @@ footer strong{
     flex-wrap:wrap;
 
     gap:9px;
+
+    max-width:100%;
 }
 
 .color-btn{
@@ -1251,18 +1326,26 @@ footer strong{
     text-align:center;
 
     background:#151515;
+
+    width:100%;
+
+    overflow:hidden;
 }
 
 .upload-box input{
     margin-top:15px;
 
     width:100%;
+
+    max-width:100%;
 }
 
 .photo-preview{
     max-width:220px;
 
     max-height:220px;
+
+    width:auto;
 
     object-fit:cover;
 
@@ -1298,6 +1381,8 @@ footer strong{
     margin-bottom:15px;
 
     border:1px solid #202020;
+
+    overflow-wrap:anywhere;
 }
 
 .summary-box strong{
@@ -1316,6 +1401,8 @@ footer strong{
 
 .summary-items{
     margin-top:18px;
+
+    min-width:0;
 }
 
 .summary-item{
@@ -1330,6 +1417,10 @@ footer strong{
     border-bottom:1px solid #252525;
 
     font-size:13px;
+
+    min-width:0;
+
+    overflow-wrap:anywhere;
 }
 
 .summary-item small{
@@ -1341,6 +1432,8 @@ footer strong{
 
     justify-content:space-between;
 
+    gap:10px;
+
     font-size:21px;
 
     font-weight:bold;
@@ -1348,6 +1441,8 @@ footer strong{
     margin:24px 0;
 
     color:var(--gold);
+
+    overflow-wrap:anywhere;
 }
 
 .builder-buttons{
@@ -1356,10 +1451,14 @@ footer strong{
     gap:12px;
 
     margin-top:30px;
+
+    width:100%;
 }
 
 .builder-buttons button{
     flex:1;
+
+    min-width:0;
 }
 
 
@@ -1393,6 +1492,10 @@ footer strong{
     opacity:0;
 
     transition:.3s;
+
+    max-width:90%;
+
+    text-align:center;
 }
 
 .toast.show{
@@ -1499,7 +1602,18 @@ footer strong{
 }
 
 
+/* =========================================================
+   MOBILE HAMPER BUILDER
+========================================================= */
+
 @media(max-width:600px){
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
 
     .navbar{
         padding:12px 14px;
@@ -1559,40 +1673,532 @@ footer strong{
         repeat(2,1fr);
     }
 
-    .builder-category-grid{
-        grid-template-columns:
-        repeat(2,1fr);
+
+    /* =========================================
+       FULL MOBILE HAMPER MODAL
+    ========================================= */
+
+    .modal-overlay{
+        position:fixed;
+
+        inset:0;
+
+        width:100%;
+
+        height:100dvh;
+
+        padding:0;
+
+        overflow-y:auto;
+
+        overflow-x:hidden;
+
+        -webkit-overflow-scrolling:touch;
     }
 
-    .builder-products{
-        grid-template-columns:
-        repeat(2,1fr);
+    .modal{
+        width:100%;
+
+        max-width:100%;
+
+        min-width:0;
+
+        min-height:0;
+
+        height:auto;
 
         max-height:none;
-    }
 
-    .box-grid{
-        grid-template-columns:1fr;
-    }
+        margin:0;
 
-    .box-option{
-        min-height:150px;
-    }
+        border-radius:0;
 
-    .builder-main{
-        padding:18px;
-    }
-
-    .builder-summary{
-        padding:18px;
+        overflow:visible;
     }
 
     .modal-header{
-        padding:18px;
+        position:sticky;
+
+        top:0;
+
+        z-index:20;
+
+        width:100%;
+
+        min-height:60px;
+
+        padding:14px 16px;
+
+        gap:10px;
     }
 
     .modal-header h2{
-        font-size:19px;
+        font-size:17px;
+
+        line-height:1.3;
+
+        max-width:80%;
+
+        overflow-wrap:anywhere;
+    }
+
+    .modal-close{
+        font-size:28px;
+
+        flex-shrink:0;
+    }
+
+
+    /* =========================================
+       BUILDER
+    ========================================= */
+
+    .builder{
+        display:flex;
+
+        flex-direction:column;
+
+        width:100%;
+
+        min-width:0;
+
+        min-height:0;
+    }
+
+    .builder-main{
+        width:100%;
+
+        min-width:0;
+
+        min-height:0;
+
+        padding:16px;
+
+        border-right:0;
+
+        border-bottom:1px solid #292929;
+
+        overflow:visible;
+    }
+
+    .builder-summary{
+        width:100%;
+
+        min-width:0;
+
+        min-height:0;
+
+        padding:18px 16px;
+
+        position:static;
+
+        overflow:visible;
+    }
+
+
+    /* =========================================
+       STEPS
+    ========================================= */
+
+    .steps{
+        width:100%;
+
+        display:grid;
+
+        grid-template-columns:
+        repeat(4,1fr);
+
+        gap:5px;
+
+        margin-bottom:22px;
+
+        overflow:visible;
+
+        max-width:100%;
+    }
+
+    .step{
+        width:100%;
+
+        min-width:0;
+
+        padding:8px 3px;
+
+        font-size:10px;
+
+        line-height:1.2;
+
+        white-space:normal;
+
+        flex-shrink:1;
+
+        overflow-wrap:anywhere;
+    }
+
+
+    /* =========================================
+       BUILDER HEADINGS
+    ========================================= */
+
+    .builder-step{
+        width:100%;
+
+        min-width:0;
+
+        overflow:visible;
+    }
+
+    .builder-step h3{
+        font-size:21px;
+
+        line-height:1.3;
+    }
+
+    .builder-step>p{
+        font-size:13px;
+
+        line-height:1.5;
+
+        margin-bottom:18px;
+    }
+
+
+    /* =========================================
+       BOXES
+    ========================================= */
+
+    .box-grid{
+        display:grid;
+
+        grid-template-columns:
+        1fr 1fr;
+
+        gap:10px;
+
+        width:100%;
+
+        min-width:0;
+    }
+
+    .box-option{
+        width:100%;
+
+        min-width:0;
+
+        min-height:145px;
+
+        padding:18px 8px;
+    }
+
+    .box-option-icon{
+        font-size:38px;
+
+        margin-bottom:6px;
+    }
+
+    .box-option h4{
+        font-size:15px;
+
+        line-height:1.3;
+    }
+
+    .box-option p{
+        font-size:11px;
+
+        line-height:1.3;
+    }
+
+    .box-price{
+        font-size:17px;
+
+        margin-top:5px;
+    }
+
+
+    /* =========================================
+       CATEGORIES
+    ========================================= */
+
+    .builder-category-grid{
+        display:grid;
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:9px;
+
+        width:100%;
+
+        min-width:0;
+    }
+
+    .builder-category{
+        width:100%;
+
+        min-width:0;
+
+        min-height:90px;
+
+        padding:14px 5px;
+
+        font-size:12px;
+
+        overflow-wrap:anywhere;
+    }
+
+    .builder-category-icon{
+        font-size:26px;
+
+        margin-bottom:5px;
+    }
+
+
+    /* =========================================
+       PRODUCTS
+    ========================================= */
+
+    .builder-products{
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+
+        width:100%;
+
+        max-width:100%;
+
+        min-width:0;
+
+        max-height:none;
+
+        overflow:visible;
+
+        padding:0;
+
+        margin-top:18px;
+    }
+
+    .builder-product{
+        width:100%;
+
+        min-width:0;
+
+        display:flex;
+
+        align-items:center;
+
+        overflow:hidden;
+    }
+
+    .builder-product img{
+        width:105px;
+
+        min-width:105px;
+
+        max-width:105px;
+
+        height:105px;
+
+        object-fit:cover;
+
+        flex-shrink:0;
+    }
+
+    .builder-product-info{
+        padding:12px;
+
+        min-width:0;
+
+        flex:1;
+
+        overflow:hidden;
+    }
+
+    .builder-product-info h4{
+        font-size:14px;
+
+        line-height:1.35;
+
+        overflow-wrap:anywhere;
+
+        word-break:break-word;
+    }
+
+    .builder-product-price{
+        font-size:12px;
+    }
+
+
+    /* =========================================
+       COLORS
+    ========================================= */
+
+    #builderColorArea{
+        width:100%;
+
+        min-width:0;
+
+        margin-top:15px;
+
+        padding:15px;
+
+        overflow:hidden;
+    }
+
+    #builderColors{
+        display:flex;
+
+        flex-wrap:wrap;
+
+        gap:7px;
+
+        width:100%;
+    }
+
+    .color-btn{
+        padding:8px 13px;
+
+        font-size:12px;
+
+        max-width:100%;
+    }
+
+
+    /* =========================================
+       UPLOAD
+    ========================================= */
+
+    .upload-box{
+        width:100%;
+
+        min-width:0;
+
+        padding:20px 12px;
+
+        overflow:hidden;
+    }
+
+    .upload-box input{
+        width:100%;
+
+        max-width:100%;
+
+        font-size:12px;
+    }
+
+    .photo-preview{
+        width:100%;
+
+        max-width:200px;
+
+        height:auto;
+    }
+
+
+    /* =========================================
+       FORM INPUTS
+    ========================================= */
+
+    .builder-step input,
+    .builder-step textarea{
+        width:100%;
+
+        max-width:100%;
+
+        min-width:0;
+
+        font-size:14px;
+    }
+
+
+    /* =========================================
+       BUTTONS
+    ========================================= */
+
+    .builder-buttons{
+        display:flex;
+
+        flex-direction:column;
+
+        width:100%;
+
+        gap:9px;
+
+        margin-top:22px;
+    }
+
+    .builder-buttons button{
+        width:100%;
+
+        min-width:0;
+
+        min-height:46px;
+
+        flex:none;
+    }
+
+
+    /* =========================================
+       SUMMARY
+    ========================================= */
+
+    .summary-title{
+        font-size:21px;
+    }
+
+    .summary-box{
+        width:100%;
+
+        min-width:0;
+
+        padding:14px;
+
+        overflow-wrap:anywhere;
+
+        word-break:break-word;
+    }
+
+    .summary-item{
+        width:100%;
+
+        min-width:0;
+
+        overflow-wrap:anywhere;
+
+        word-break:break-word;
+
+        font-size:12px;
+    }
+
+    .summary-total{
+        width:100%;
+
+        min-width:0;
+
+        font-size:18px;
+
+        gap:10px;
+
+        overflow-wrap:anywhere;
+    }
+
+
+    /* =========================================
+       LONG TEXT PROTECTION
+    ========================================= */
+
+    .builder-product h4,
+    .summary-item,
+    .summary-box,
+    .builder-step,
+    .builder-step h3,
+    .builder-step p{
+        overflow-wrap:anywhere;
+
+        word-break:break-word;
+
+        max-width:100%;
     }
 
     .customize-box{
@@ -2233,7 +2839,7 @@ onclick="orderCartOnWhatsApp()">
 
 
 <!-- =====================================================
-     LARGE HAMPER BUILDER
+     HAMPER BUILDER
 ===================================================== -->
 
 <div
@@ -2329,7 +2935,7 @@ Select the box size for your custom hamper.
 
 <div
 class="box-option"
-onclick="selectBox(this,'Small Box')">
+onclick="selectBox(this,'Small Box',99)">
 
 <div class="box-option-icon">
 🎁
@@ -2343,12 +2949,16 @@ Small Box
 Perfect for 2–3 gifts
 </p>
 
+<div class="box-price">
+₹99
+</div>
+
 </div>
 
 
 <div
 class="box-option"
-onclick="selectBox(this,'Medium Box')">
+onclick="selectBox(this,'Medium Box',149)">
 
 <div class="box-option-icon">
 🎁
@@ -2362,12 +2972,16 @@ Medium Box
 Perfect for 3–5 gifts
 </p>
 
+<div class="box-price">
+₹149
+</div>
+
 </div>
 
 
 <div
 class="box-option"
-onclick="selectBox(this,'Large Box')">
+onclick="selectBox(this,'Large Box',199)">
 
 <div class="box-option-icon">
 🎁
@@ -2381,12 +2995,16 @@ Large Box
 Perfect for 5–7 gifts
 </p>
 
+<div class="box-price">
+₹199
+</div>
+
 </div>
 
 
 <div
 class="box-option"
-onclick="selectBox(this,'Premium Box')">
+onclick="selectBox(this,'Premium Box',299)">
 
 <div class="box-option-icon">
 💎
@@ -2399,6 +3017,10 @@ Premium Box
 <p>
 Luxury gift presentation
 </p>
+
+<div class="box-price">
+₹299
+</div>
 
 </div>
 
@@ -2440,8 +3062,6 @@ Select products to build your own personalized hamper.
 
 <div class="builder-category-grid">
 
-
-<!-- NO TEDDY -->
 
 <button
 class="builder-category"
@@ -3103,7 +3723,7 @@ function displayProducts(list){
         src="${product.image}"
         class="product-image"
         alt="${product.name}"
-        onerror="this.style.display='none'">
+        onerror="this.style.display='none'>
 
 
         <div class="product-info">
@@ -3792,6 +4412,8 @@ let customHamper={
 
     box:"",
 
+    boxPrice:0,
+
     items:[],
 
     selectedCategory:"",
@@ -3843,6 +4465,8 @@ function resetHamper(){
     customHamper={
 
         box:"",
+
+        boxPrice:0,
 
         items:[],
 
@@ -3955,7 +4579,7 @@ function resetHamper(){
    SELECT BOX
 ========================================================= */
 
-function selectBox(element,boxName){
+function selectBox(element,boxName,boxPrice){
 
     document
     .querySelectorAll(".box-option")
@@ -3975,7 +4599,43 @@ function selectBox(element,boxName){
         boxName;
 
 
+    customHamper.boxPrice=
+        Number(boxPrice)||0;
+
+
     updateBuilderSummary();
+
+
+    showToast(
+        boxName+
+        " selected - ₹"+
+        boxPrice
+    );
+
+}
+
+
+/* =========================================================
+   CALCULATE HAMPER TOTAL
+========================================================= */
+
+function getHamperTotal(){
+
+    let total=
+        Number(customHamper.boxPrice)||0;
+
+
+    customHamper.items.forEach(
+        item=>{
+
+            total+=
+                Number(item.price)||0;
+
+        }
+    );
+
+
+    return total;
 
 }
 
@@ -4048,6 +4708,23 @@ function nextBuilderStep(stepNumber){
         "stepIndicator"+stepNumber
     )
     .classList.add("active");
+
+
+    /* Scroll builder to top on mobile */
+
+    const modal=
+        document.getElementById(
+            "hamperModal"
+        );
+
+    if(modal){
+
+        modal.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }
 
 }
 
@@ -4168,11 +4845,6 @@ function selectBuilderProduct(index){
         "";
 
 
-    /*
-       NO COLOR PRODUCTS
-       ARE ADDED DIRECTLY.
-    */
-
     if(
         !product.colors ||
         product.colors.length===0
@@ -4242,6 +4914,9 @@ function showColors(colors){
             "color-btn";
 
 
+        button.type="button";
+
+
         button.textContent=
             color;
 
@@ -4251,7 +4926,7 @@ function showColors(colors){
 
                 document
                 .querySelectorAll(
-                    ".color-btn"
+                    "#builderColors .color-btn"
                 )
                 .forEach(btn=>{
                     btn.classList.remove(
@@ -4331,7 +5006,7 @@ function addSelectedBuilderProduct(color){
 
         name:product.name,
 
-        price:product.price,
+        price:Number(product.price)||0,
 
         image:product.image,
 
@@ -4377,7 +5052,13 @@ function updateBuilderSummary(){
         "summaryBox"
     )
     .textContent=
-        customHamper.box ||
+
+        customHamper.box
+        ?
+        customHamper.box+
+        " - ₹"+
+        customHamper.boxPrice
+        :
         "Not selected";
 
 
@@ -4390,8 +5071,44 @@ function updateBuilderSummary(){
     container.innerHTML="";
 
 
+    /* Show box price as first summary item */
+
+    if(customHamper.box){
+
+        const boxDiv=
+            document.createElement(
+                "div"
+            );
+
+
+        boxDiv.className=
+            "summary-item";
+
+
+        boxDiv.innerHTML=`
+
+        <div>
+        🎁 ${customHamper.box}
+        </div>
+
+        <div>
+        ₹${customHamper.boxPrice}
+        </div>
+
+        `;
+
+
+        container.appendChild(
+            boxDiv
+        );
+
+    }
+
+
     if(
         customHamper.items.length===0
+        &&
+        !customHamper.box
     ){
 
         container.innerHTML=`
@@ -4403,13 +5120,7 @@ function updateBuilderSummary(){
     }
 
 
-    let total=0;
-
-
     customHamper.items.forEach(item=>{
-
-        total+=item.price;
-
 
         const div=
             document.createElement(
@@ -4458,6 +5169,10 @@ function updateBuilderSummary(){
         container.appendChild(div);
 
     });
+
+
+    const total=
+        getHamperTotal();
 
 
     document
@@ -4577,16 +5292,6 @@ function prepareHamperReview(){
         );
 
 
-    let total=0;
-
-
-    customHamper.items.forEach(
-        item=>{
-            total+=item.price;
-        }
-    );
-
-
     let itemsHTML="";
 
 
@@ -4634,6 +5339,10 @@ function prepareHamperReview(){
     );
 
 
+    const total=
+        getHamperTotal();
+
+
     review.innerHTML=`
 
     <div class="summary-box">
@@ -4644,6 +5353,7 @@ function prepareHamperReview(){
 
     <span>
     ${customHamper.box}
+    - ₹${customHamper.boxPrice}
     </span>
 
     </div>
@@ -4757,14 +5467,8 @@ function addHamperToCart(){
     }
 
 
-    let total=0;
-
-
-    customHamper.items.forEach(
-        item=>{
-            total+=item.price;
-        }
-    );
+    const total=
+        getHamperTotal();
 
 
     cart.push({
@@ -4832,6 +5536,10 @@ function orderCustomHamper(){
     }
 
 
+    const total=
+        getHamperTotal();
+
+
     let message=
         "Hello CREATIVE ADDA!%0A%0A"+
         "🎁 CUSTOM HAMPER ORDER%0A%0A";
@@ -4842,6 +5550,8 @@ function orderCustomHamper(){
         encodeURIComponent(
             customHamper.box
         )+
+        " - ₹"+
+        customHamper.boxPrice+
         "%0A%0A";
 
 
@@ -4881,6 +5591,22 @@ function orderCustomHamper(){
 
         }
     );
+
+
+    message+=
+        "%0ABox Price: ₹"+
+        customHamper.boxPrice;
+
+
+    message+=
+        "%0ATotal: "+
+        (
+            total>0
+            ?
+            "₹"+total
+            :
+            "Price on Request"
+        );
 
 
     message+=
@@ -5052,4 +5778,3 @@ displayProducts(products);
 </body>
 
 </html>
-```
